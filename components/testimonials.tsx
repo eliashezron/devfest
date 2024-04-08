@@ -68,16 +68,19 @@ export default function Testimonials() {
             <Image src={muda} width={100} height={100} alt="Celo" />
             </div>
 
+          </div>
+
+            <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-4 md:grid-cols-5"> 
             {/* Item */}
-            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto col-start-2 col-end-4">
+            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
             <Image src={base} width={100} height={100} alt="Celo" />
             </div>
             {/* Item */}
-            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto col-start-2 col-end-4">
+            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
             <Image src={motiv} width={100} height={100} alt="Celo" />
             </div>
             {/* Item */}
-            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto col-start-2 col-end-4">
+            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
             <Image src={ngeni} width={100} height={100} alt="Celo" />
             </div>
 
