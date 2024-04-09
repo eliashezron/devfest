@@ -22,42 +22,42 @@ export default function FeaturesBlocks() {
 
             {/* 1st item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <Image src={FeaturesElement} width={200} height={300} alt="Features element" />
+              <Image className="relative rounded-full"  src={FeaturesElement} width={150} height={250} alt="Features element" />
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Speaker 1</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
             {/* 2nd item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-            <Image src={FeaturesElement} width={200} height={300} alt="Features element" />
+            <Image className="relative rounded-full" src={FeaturesElement} width={150} height={250} alt="Features element" />
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Speaker 2</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
             {/* 3rd item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-            <Image src={FeaturesElement} width={200} height={300} alt="Features element" />
+            <Image className="relative rounded-full" src={FeaturesElement} width={150} height={250} alt="Features element" />
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Speaker 3</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
             {/* 4th item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-            <Image src={FeaturesElement} width={200} height={300} alt="Features element" />
+            <Image className="relative rounded-full" src={FeaturesElement} width={150} height={250} alt="Features element" />
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Speaker 4</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
             {/* 5th item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-            <Image src={FeaturesElement} width={200} height={300} alt="Features element" />
+            <Image className="relative rounded-full"  src={FeaturesElement} width={150} height={250} alt="Features element" />
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Speaker 5</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
             {/* 6th item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-            <Image src={FeaturesElement} width={200} height={300} alt="Features element" />
+            <Image className="relative rounded-full"  src={FeaturesElement} width={150} height={250} alt="Features element" />
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Speaker 6</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
