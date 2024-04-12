@@ -1,11 +1,20 @@
 import Image from 'next/image'
-import FeaturesElement from '@/public/images/pf.jpg'
+import elias from '@/public/images/pf.jpg'
+import david from '@/public/images/david.jpg'
+import blank from '@/public/images/blank.svg'
+import jovan from '@/public/images/jovan.jpg'
 export default function FeaturesBlocks() {
   return (
     <section className="relative">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-900 pointer-events-none" aria-hidden="true"></div>
+      <div className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-900 pointer-events-none" aria-hidden="true">
+        {/* <div>
+        <div className="wave"></div>
+        <div className="wave"></div>
+        <div className="wave"></div>
+      </div> */}
+      </div>
       <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-gray-200 transform translate-y-1/2"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
@@ -22,45 +31,45 @@ export default function FeaturesBlocks() {
 
             {/* 1st item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <Image className="relative rounded-full"  src={FeaturesElement} width={150} height={250} alt="Features element" />
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Speaker 1</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <Image className="relative rounded-full"  src={elias} width={150} height={250} alt="Features element" />
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Elias Hezron</h4>
+              <p className="text-gray-600 text-center">Co-Founder Oneramp & Shukuru Wallet</p>
             </div>
 
             {/* 2nd item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-            <Image className="relative rounded-full" src={FeaturesElement} width={150} height={250} alt="Features element" />
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Speaker 2</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <Image className="relative rounded-full" src={david} width={150} height={250} alt="Features element" />
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">David Lumala</h4>
+              <p className="text-gray-600 text-center">Co-Founder Epoch Infinity </p>
             </div>
 
             {/* 3rd item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-            <Image className="relative rounded-full" src={FeaturesElement} width={150} height={250} alt="Features element" />
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Speaker 3</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <Image className="relative rounded-full" src={jovan} width={150} height={250} alt="Features element" />
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Jovan Mwesigwa</h4>
+              <p className="text-gray-600 text-center">Co-Founder Oneramp & Shukuru Wallet</p>
             </div>
 
             {/* 4th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-            <Image className="relative rounded-full" src={FeaturesElement} width={150} height={250} alt="Features element" />
+            {/* <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <Image className="relative rounded-full" src={elias} width={150} height={250} alt="Features element" />
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Speaker 4</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+            </div> */}
 
             {/* 5th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-            <Image className="relative rounded-full"  src={FeaturesElement} width={150} height={250} alt="Features element" />
+            {/* <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <Image className="relative rounded-full"  src={elias} width={150} height={250} alt="Features element" />
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Speaker 5</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+            </div> */}
 
             {/* 6th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-            <Image className="relative rounded-full"  src={FeaturesElement} width={150} height={250} alt="Features element" />
+            {/* <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <Image className="relative rounded-full"  src={elias} width={150} height={250} alt="Features element" />
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Speaker 6</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+            </div> */}
 
           </div>
 
