@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - Simple',
-  description: 'Page description',
+  title: 'Devfest Kampala',
+  description: `Embrace the blockchain revolution. Empowering Developers, Igniting Innovation, and Building Solutions for Africa's Future.`,
 }
 
 import Hero from '@/components/hero'
