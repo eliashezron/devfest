@@ -3,13 +3,13 @@ import TestimonialImage from '@/public/images/testimonial.jpg'
 import celo from '@/public/images/celo.png'
 import base from '@/public/images/base.jpeg'
 import web3bridge from '@/public/images/w3bridge.png'
-import brave from '@/public/images/brave.png'
+import starknet from '@/public/images/starknet.png'
 import iv from '@/public/images/iv.png'
 import fonbnk from '@/public/images/fonbnk.png'
 import onboard from '@/public/images/onboard.png'
-import lisk from '@/public/images/lisk.png'
+import unlock from '@/public/images/unlock.png'
 import pf from '@/public/images/pf.jpg'
-import noones from '@/public/images/noones.png'
+import muda from '@/public/images/muda.png'
 import pago from '@/public/images/pago.png'
 import oneramp from '@/public/images/oneramp.png'
 import Link from 'next/link'
@@ -58,28 +58,28 @@ export default function Testimonials() {
 
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-            <Link href="https://brave.com/" passHref target="_blank" rel="noopener noreferrer">
-            <Image src={brave} width={100} height={100} alt="Celo" />
+            <Link href="https://www.starknet.io/" passHref target="_blank" rel="noopener noreferrer">
+            <Image src={starknet} width={100} height={100} alt="starknet" />
             </Link>
             </div>
 
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
             <Link href="https://x.com/onboardglobal" passHref target="_blank" rel="noopener noreferrer">
-            <Image src={onboard} width={100} height={100} alt="Celo" />
+            <Image src={onboard} width={100} height={100} alt="onboard" />
             </Link>
             </div>
 
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
             <Link href="https://innovationvillage.africa/" passHref target="_blank" rel="noopener noreferrer">
-            <Image src={iv} width={100} height={100} alt="Celo" />
+            <Image src={iv} width={100} height={100} alt="innovation village" />
             </Link>
             </div>
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto col-start-2 col-end-4">
             <Link href="https://oneramp.io/" passHref target="_blank" rel="noopener noreferrer">
-            <Image src={oneramp} width={100} height={100} alt="Celo" />
+            <Image src={oneramp} width={100} height={100} alt="oneramp" />
             </Link>
             </div>
           </div>
@@ -88,37 +88,37 @@ export default function Testimonials() {
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
             <Link href="https://www.base.org/" passHref target="_blank" rel="noopener noreferrer">
-            <Image src={base} width={100} height={100} alt="Celo" />
+            <Image src={base} width={100} height={100} alt="base" />
             </Link>
             </div>
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
             <Link href="https://www.web3bridgeafrica.com/" passHref target="_blank" rel="noopener noreferrer">
-            <Image src={web3bridge} width={100} height={100} alt="Celo" />
+            <Image src={web3bridge} width={100} height={100} alt="web3Bridge" />
             </Link>
             </div>
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-            <Link href="https://lisk.com/" passHref target="_blank" rel="noopener noreferrer">
-            <Image src={lisk} width={100} height={100} alt="Celo" />
+            <Link href="https://unlock-protocol.com/" passHref target="_blank" rel="noopener noreferrer">
+            <Image src={unlock} width={100} height={100} alt="unlock protocol" />
             </Link>
             </div>
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-            <Link href="https://noones.com/" passHref target="_blank" rel="noopener noreferrer">
-            <Image src={noones} width={100} height={100} alt="Celo" />
+            <Link href="https://muda.tech/" passHref target="_blank" rel="noopener noreferrer">
+            <Image src={muda} width={100} height={100} alt="muda" />
             </Link>
             </div>
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
             <Link href="https://fonbnk.com/" passHref target="_blank" rel="noopener noreferrer">
-                <Image src={fonbnk} width={100} height={100} alt="Celo" />
+                <Image src={fonbnk} width={100} height={100} alt="fonbnk" />
             </Link>
             </div>
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
             <Link href="https://pago.capital/" passHref target="_blank" rel="noopener noreferrer">
-                <Image src={pago} width={100} height={100} alt="Celo" />
+                <Image src={pago} width={100} height={100} alt="pago" />
             </Link>
             </div>
 
