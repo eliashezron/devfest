@@ -1,4 +1,4 @@
-import VideoThumb from '@/public/images/thumb.png'
+import VideoThumb from '@/public/images/thumb_edit.png'
 import ModalVideo from '@/components/modal-video'
 import bg from '@/public/images/bg.svg'
 import Image from 'next/image'
