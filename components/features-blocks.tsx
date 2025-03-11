@@ -23,7 +23,7 @@ export default function FeaturesBlocks() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">Listen from the Speakers</h2>
-            <p className="text-xl text-gray-600">Embark on an inspiring journey as our esteemed lineup of speakers shares their expertise, insights, and vision for the future of blockchain at Blockchain devFest Kampala 2024.</p>
+            <p className="text-xl text-gray-600">Embark on an inspiring journey as our esteemed lineup of speakers shares their expertise, insights, and vision for the future of blockchain at Blockchain devFest Kampala 2025.</p>
           </div>
 
           {/* Items */}

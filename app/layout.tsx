@@ -12,7 +12,7 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'BLOCKCHAIN DEVFEST KAMPALA 2024',
+  title: 'BLOCKCHAIN DEVFEST KAMPALA 2025',
   description: 'embracing the future of blockchain technology in Africa',
 }
 
