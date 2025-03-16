@@ -65,9 +65,7 @@ export default function FeaturesBlocks() {
         Listen from the Speakers
       </h2>
       <p className="text-lg text-gray-600 leading-relaxed max-w-xl mx-auto">
-        Embark on an inspiring journey as our esteemed lineup of speakers shares
-        their expertise, insights, and vision for the future of blockchain at
-        Blockchain DevFest Kampala 2024.
+      Embark on an inspiring journey as our esteemed lineup of speakers shares their expertise, insights, and vision for the future of blockchain at Blockchain devFest Kampala 2025.
       </p>
     </div>
 
