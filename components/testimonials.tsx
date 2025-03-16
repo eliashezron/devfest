@@ -93,7 +93,9 @@ const Testimonials: React.FC = () => {
               Stories from <br />Our previous Attendees
             </h2>
             <p className="text-gray-600 max-w-md">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde cum aspernatur facere iure esse, tenetur totam corrupti accusamus accusantium, quae officiis dolores! Magni soluta nihil, modi officiis quod aliquam delectus?
+            Hear firsthand experiences from past attendees who were inspired,  
+            empowered, and connected at Blockchain DevFest Kampala 2024.  
+            Discover how this event shaped their journey and fueled their passion for blockchain innovation.  
             </p>
             <div className="flex space-x-4">
               <button
