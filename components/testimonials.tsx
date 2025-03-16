@@ -18,19 +18,19 @@ const testimonialsData = [
     avatar: david
   },
   {
-    quote: '" Blockchain devFest Kampala 2024 exceeded all my expectations. Inspiring speakers, valuable networking, and practical workshops made it an event not to be missed. Highly recommended!"',
+    quote: '" Blockchain devFest Kampala 2025 exceeded all my expectations. Inspiring speakers, valuable networking, and practical workshops made it an event not to be missed. Highly recommended!"',
     name: 'Angella Mulikatete',
     title: 'software Engineer',
     avatar: angie
   },
   {
-    quote: '" Blockchain devFest Kampala 2024 exceeded all my expectations. Inspiring speakers, valuable networking, and practical workshops made it an event not to be missed. Highly recommended!"',
+    quote: '" Blockchain devFest Kampala 2025 exceeded all my expectations. Inspiring speakers, valuable networking, and practical workshops made it an event not to be missed. Highly recommended!"',
     name: 'Elias Hezron',
     title: 'Co-Founder Oneramp & Shukuru Wallet',
     avatar: elias
   },
   {
-    quote: '" Blockchain devFest Kampala 2024 exceeded all my expectations. Inspiring speakers, valuable networking, and practical workshops made it an event not to be missed. Highly recommended!"',
+    quote: '" Blockchain devFest Kampala 2025 exceeded all my expectations. Inspiring speakers, valuable networking, and practical workshops made it an event not to be missed. Highly recommended!"',
     name: 'Jovan Mwesigwa',
     title: 'Co-Founder Oneramp & Shukuru Wallet',
     avatar: jovan
@@ -94,7 +94,7 @@ const Testimonials: React.FC = () => {
             </h2>
             <p className="text-gray-600 max-w-md">
             Hear firsthand experiences from past attendees who were inspired,  
-            empowered, and connected at Blockchain DevFest Kampala 2024.  
+            empowered, and connected at Blockchain DevFest Kampala 2025.  
             Discover how this event shaped their journey and fueled their passion for blockchain innovation.  
             </p>
             <div className="flex space-x-4">
