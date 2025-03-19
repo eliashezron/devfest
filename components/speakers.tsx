@@ -73,8 +73,16 @@ export default function Speakers() {
                 className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl cursor-pointer"
                 onClick={() => setSelectedSpeaker(speaker)}
               >
-                <Image className="relative rounded-full" src={speaker.image} width={150} height={150} alt={speaker.name} />
-                <h4 className="text-xl font-bold leading-snug tracking-tight mt-4">{speaker.name}</h4>
+                  <div className="flex justify-center items-center">
+                    <Image
+                      className="rounded-full"
+                      src={speaker.image}
+                      width={150}
+                      height={150}
+                      alt={speaker.name}
+                    />
+                 </div>
+                <h4 className="text-xl font-bold leading-snug tracking-tight  text-center mt-4">{speaker.name}</h4>
                 <p className="text-gray-600 text-center">{speaker.role}</p>
               </motion.div>
             ))}
