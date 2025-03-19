@@ -1,20 +1,15 @@
-'use client'
+'use client';
 
 import { useState } from 'react';
 import Slider from 'react-slick';
 import { motion } from 'framer-motion';
-
-import Image from 'next/image'
-import elias from '@/public/images/pf.jpg'
-import david from '@/public/images/david.jpg'
-import blank from '@/public/images/blank.svg'
-import jovan from '@/public/images/jovan.jpg'
-
-
+import Image from 'next/image';
+import elias from '@/public/images/pf.jpg';
+import david from '@/public/images/david.jpg';
+import jovan from '@/public/images/jovan.jpg';
 
 // Speaker Data
 const speakers = [
-
   {
     name: "David Lumala",
     role: "Co-Founder Epoch Infinity",
@@ -35,12 +30,11 @@ const speakers = [
   }
 ];
 
-export default function FeaturesBlocks() {
+export default function Speakers() {
   const [selectedSpeaker, setSelectedSpeaker] = useState<null | typeof speakers[0]>(null);
 
   // Slider settings
   const settings = {
-    //dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -54,27 +48,27 @@ export default function FeaturesBlocks() {
   };
 
   return (
-    <section className="relative">
+    <section className="relative py-12 md:py-20">
       <div className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-900 pointer-events-none"></div>
       <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-gray-200 transform translate-y-1/2"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
-        <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20 px-4">
-      <h2 className="text-3xl font-semibold text-gray-900 mb-6">
-        Listen from the Speakers
-      </h2>
-      <p className="text-lg text-gray-600 leading-relaxed max-w-xl mx-auto">
-      Embark on an inspiring journey as our esteemed lineup of speakers shares their expertise, insights, and vision for the future of blockchain at Blockchain devFest Kampala 2025.
-      </p>
-    </div>
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20 px-4">
+            <h2 className="text-3xl font-semibold text-gray-900 mb-6">
+              Listen from the Speakers
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed max-w-xl mx-auto">
+              Embark on an inspiring journey as our esteemed lineup of speakers shares their expertise, insights, and vision for the future of blockchain at Blockchain devFest Kampala 2025.
+            </p>
+          </div>
 
           {/* Speaker Carousel */}
           <Slider {...settings} className="px-4">
             {speakers.map((speaker, index) => (
-              <motion.div 
-                key={index} 
-                whileHover={{ scale: 1.05 }} 
+              <motion.div
+                key={index}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl cursor-pointer"
                 onClick={() => setSelectedSpeaker(speaker)}
@@ -88,14 +82,14 @@ export default function FeaturesBlocks() {
 
           {/* Speaker Details Modal */}
           {selectedSpeaker && (
-            <motion.div 
+            <motion.div
               className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-md p-6"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
               onClick={() => setSelectedSpeaker(null)}
             >
-              <motion.div 
+              <motion.div
                 className="bg-white p-6 rounded-lg shadow-xl max-w-lg w-full text-center"
                 initial={{ y: 50 }}
                 animate={{ y: 0 }}
@@ -106,7 +100,7 @@ export default function FeaturesBlocks() {
                 <h3 className="text-2xl font-bold mt-4">{selectedSpeaker.name}</h3>
                 <p className="text-gray-600">{selectedSpeaker.role}</p>
                 <p className="mt-4 text-gray-800">{selectedSpeaker.bio}</p>
-                <button 
+                <button
                   className="mt-6 px-4 py-2 bg-red-500 text-white rounded-md"
                   onClick={() => setSelectedSpeaker(null)}
                 >
@@ -139,7 +133,10 @@ export default function FeaturesBlocks() {
 
 
 
-// export default function FeaturesBlocks() {
+
+
+
+// export default function Speakers() {
 //   return (
 //     <section className="relative">
 

@@ -1,25 +1,15 @@
-'use client'
+'use client';
 
-import { useState, useRef, useEffect } from 'react'
-import { Transition } from '@headlessui/react'
-import Image from 'next/image'
-import comm from '@/public/images/comm.jpeg'
-import hack from '@/public/images/hack.jpeg'
-import share from '@/public/images/share.jpeg'
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
+import comm from '@/public/images/comm.jpeg';
+import hack from '@/public/images/hack.jpeg';
+import share from '@/public/images/share.jpeg';
 
 export default function Features() {
   const [tab, setTab] = useState<number>(1);
-  const tabs = useRef<HTMLDivElement>(null);
   const intervalTime = 4000; // Change images every 4 seconds
-
-  const heightFix = () => {
-    if (tabs.current && tabs.current.parentElement)
-      tabs.current.parentElement.style.height = `${tabs.current.clientHeight}px`;
-  };
-
-  useEffect(() => {
-    heightFix();
-  }, []);
 
   // Auto-switch tabs
   useEffect(() => {
@@ -29,6 +19,12 @@ export default function Features() {
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
+
+  const tabsData = [
+    { id: 1, title: 'Community', description: 'Forge valuable connections with fellow attendees who share your interests and aspirations.', img: comm },
+    { id: 2, title: 'Talks and Workshops', description: 'Take collaboration to the next level with security and administrative features built for teams.', img: share },
+    { id: 3, title: 'Hackathons', description: 'Take collaboration to the next level with security and administrative features built for teams.', img: hack },
+  ];
 
   return (
     <section className="relative py-12 md:py-20 bg-gray-100">
@@ -46,50 +42,7 @@ export default function Features() {
           {/* Tabs buttons */}
           <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6">
             <div className="mb-8 md:mb-0 space-y-4">
-              {[
-                  { id: 1, title: 'Community', description: 'Forge valuable connections with fellow attendees who share your interests and aspirations. Share knowledge, insights, and experiences with others in the community, fostering growth and development.', img: comm , 
-                    icon: (
-                    <svg
-                      className="w-3 h-3 fill-current"
-                      viewBox="0 0 12 12"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-                    </svg>
-                    ),
-                  },
-
-                { id: 2, title: 'Talks and Workshops', description: 'Take collaboration to the next level with security and administrative features built for teams.', img: share , 
-                  icon: (
-                  <svg
-                    className="w-3 h-3 fill-current"
-                    viewBox="0 0 12 12"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.854.146a.5.5 0 00-.525-.116l-11 4a.5.5 0 00-.015.934l4.8 1.921 1.921 4.8A.5.5 0 007.5 12h.008a.5.5 0 00.462-.329l4-11a.5.5 0 00-.116-.525z"
-                      fillRule="nonzero"
-                    />
-                  </svg>
-                  ),
-                },
-       
-                { id: 3, title: 'Hackathons', description: 'Take collaboration to the next level with security and administrative features built for teams.', img: hack,
-                  icon: (
-                    <svg
-                      className="w-3 h-3 fill-current"
-                      viewBox="0 0 12 12"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M11.334 8.06a.5.5 0 00-.421-.237 6.023 6.023 0 01-5.905-6c0-.41.042-.82.125-1.221a.5.5 0 00-.614-.586 6 6 0 106.832 8.529.5.5 0 00-.017-.485z"
-                        fill="#191919"
-                        fillRule="nonzero"
-                      />
-                    </svg>
-                  ),
-                },
-              ].map((item) => (
+              {tabsData.map((item) => (
                 <button
                   key={item.id}
                   className={`flex items-center text-left w-full p-6 rounded-lg transition-all duration-300 ease-in-out transform ${
@@ -101,59 +54,43 @@ export default function Features() {
                     <div className="font-bold text-lg text-gray-800 mb-1">{item.title}</div>
                     <div className="text-gray-600">{item.description}</div>
                   </div>
-                  <div
-                   className={`flex justify-center items-center w-8 h-8 rounded-full shadow flex-shrink-0 ml-4 transition-all duration-300 ${
-                     tab === item.id
-                       ? 'bg-blue-500 text-white'
-                       : 'bg-white text-gray-800 hover:bg-blue-500 hover:text-white'
-                   }`}
-                 >
-                   {item.icon}
-                 </div>
                 </button>
               ))}
             </div>
           </div>
 
           {/* Tabs items (Images) */}
-          <div className="max-w-xl md:w-full mx-auto md:col-span-5 lg:col-span-6" ref={tabs}>
-            {[
-              { id: 1, img: comm, alt: 'Community' },
-              { id: 2, img: share, alt: 'Talks and Workshops' },
-              { id: 3, img: hack, alt: 'Hackathons' },
-            ].map((item) => (
-              <Transition
-                key={item.id}
-                show={tab === item.id}
-                enter="transition-opacity duration-700 ease-in-out"
-                enterFrom="opacity-0"
-                enterTo="opacity-100"
-                leave="transition-opacity duration-300 ease-in-out"
-                leaveFrom="opacity-100"
-                leaveTo="opacity-0"
-                unmount={false}
-              >
-                <div className="relative group">
-                  <Image
-                    className="md:max-w-none mx-auto rounded-lg shadow-lg transform transition-transform duration-300 group-hover:scale-105"
-                    src={item.img}
-                    width={500}
-                    height={462}
-                    alt={item.alt}
-                  />
-                </div>
-              </Transition>
-            ))}
+          <div className="max-w-xl md:w-full mx-auto md:col-span-5 lg:col-span-6">
+            <div className="relative h-[400px] w-full overflow-hidden rounded-lg">
+              <AnimatePresence mode="wait">
+                {tabsData.map(
+                  (item) =>
+                    tab === item.id && (
+                      <motion.div
+                        key={item.id}
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -100 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute inset-0"
+                      >
+                        <Image
+                          src={item.img}
+                          alt={item.title}
+                          fill
+                          className="rounded-lg object-cover"
+                        />
+                      </motion.div>
+                    )
+                )}
+              </AnimatePresence>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 }
-
-
-
-
 
 
 
