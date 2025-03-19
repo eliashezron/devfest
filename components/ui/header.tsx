@@ -37,7 +37,7 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <Link href="https://forms.gle/a4P8BBXF21JmzwVN7" passHref target="_blank" rel="noopener noreferrer" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">SPONSOR</Link>
+                <Link href="https://forms.gle/a4P8BBXF21JmzwVN7" passHref target="_blank" rel="noopener noreferrer" className="font-medium  hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">SPONSOR</Link>
               </li>
               <li>
                 <Link href="https://app.unlock-protocol.com/event/block-chain-dev-fest" passHref target="_blank" rel="noopener noreferrer" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
