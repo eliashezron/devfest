@@ -12,7 +12,7 @@ export default function Banner() {
       {bannerOpen && (
         <div className="fixed bottom-0 right-0 w-full md:bottom-8 md:right-12 md:w-auto z-50">
           <div className="bg-slate-800 text-slate-50 text-sm p-3 md:rounded shadow-lg flex justify-between">
-            <div className='text-slate-500 inline-flex'><Link className="font-medium hover:underline text-slate-50" href="https://forms.gle/oqPys2jHZw3ub2JN7" target="_blank" rel="noreferrer">HACK<span className="hidden sm:inline"> To win</span></Link> <span className="italic px-1.5">or</span> <Link className="font-medium hover:underline text-emerald-400" href="https://forms.gle/a4P8BBXF21JmzwVN7" target="_blank" rel="noreferrer">Sponsor</Link></div>
+            <div className='text-slate-500 inline-flex'><Link className="font-medium hover:underline text-slate-50" href="https://lu.ma/veliqhyg" target="_blank" rel="noreferrer">HACK<span className="hidden sm:inline"> To win</span></Link> <span className="italic px-1.5">or</span> <Link className="font-medium hover:underline text-emerald-400" href="https://forms.gle/a4P8BBXF21JmzwVN7" target="_blank" rel="noreferrer">Sponsor</Link></div>
             <button className="text-slate-500 hover:text-slate-400 pl-2 ml-3 border-l border-gray-700" onClick={() => setBannerOpen(false)}>
               <span className="sr-only">Close</span>
               <svg className="w-4 h-4 shrink-0 fill-current" viewBox="0 0 16 16">
