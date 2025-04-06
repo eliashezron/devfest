@@ -66,7 +66,7 @@ export default function Hero() {
                   <div>
                     <a
                       className="btn text-white bg-red-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
-                      href="https://forms.gle/oqPys2jHZw3ub2JN7"
+                      href="https://lu.ma/veliqhyg"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
