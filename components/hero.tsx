@@ -1,98 +1,200 @@
-import VideoThumb from "@/public/images/thumb_edit.png"
-import ModalVideo from "@/components/modal-video"
-import ImageCarousel from "@/components/image-carousel"
+
+
+
+import VideoThumb from "@/public/images/thumb_edit.png";
+import ModalVideo from "@/components/modal-video";
+import ImageCarousel from "@/components/image-carousel";
 
 export default function Hero() {
-  // Sample images for the carousel - replace with your actual images
   const carouselImages = [
     "/images/hack1.jpg",
     "/images/basePic.jpg",
     "/images/hack3.jpg",
-     "/images/starknetPic.jpg",
+    "/images/starknetPic.jpg",
     "/images/unlockPic.jpg",
     "/images/hack2.jpg",
-    "/images/hack4.jpg"
-  ]
-  
+    "/images/hack4.jpg",
+  ];
 
   return (
     <section className="relative">
-      {/* Image carousel background */}
+      {/* Background Carousel */}
       <div className="absolute inset-0 pointer-events-none -z-10" aria-hidden="true">
-        <ImageCarousel images={carouselImages} interval={6000} className="w-full h-full" />
+        <ImageCarousel images={carouselImages} interval={6000} className="w-full h-full object-cover" />
       </div>
 
-      {/* Subtle overlay to improve text visibility without obscuring images */}
-      <div className="absolute inset-0 bg-black/20 pointer-events-none -z-5" aria-hidden="true"></div>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40 pointer-events-none -z-5" aria-hidden="true"></div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Hero content - removed extra top padding since header is now static */}
-        <div className="pt-12 pb-12 md:pt-2 md:pb-20">
-          {/* Section header */}
+        <div className="pt-20 pb-16 md:pt-24 md:pb-20">
           <div className="relative z-10">
-            <div className="text-center pb-12 md:pb-16 p-6">
+            <div className="text-center px-4 sm:px-6">
               <h1
-                className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 text-white text-shadow-lg"
+                className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4 text-white text-shadow-lg"
                 data-aos="zoom-y-out"
               >
-                Embrace the Blockchain Revolution <br></br>
+                Embrace the Blockchain Revolution
+                <br />
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-300 text-shadow-none">
                   DevFest Kampala 2025
                 </span>
               </h1>
-              <div className="max-w-3xl mx-auto">
-                <p
-                  className="text-xl text-white font-medium mb-8 text-shadow-md"
-                  data-aos="zoom-y-out"
-                  data-aos-delay="150"
+              <p
+                className="text-base sm:text-lg md:text-xl text-white font-medium mb-6 text-shadow-md max-w-md mx-auto"
+                data-aos="zoom-y-out"
+                data-aos-delay="150"
+              >
+                Empowering Developers, Igniting Innovation, and Building Solutions for Africa's Future
+              </p>
+
+              {/* CTA Buttons */}
+              <div
+                className="flex flex-col sm:flex-row sm:justify-center gap-3 max-w-xs sm:max-w-none mx-auto"
+                data-aos="zoom-y-out"
+                data-aos-delay="300"
+              >
+                <a
+                  className="btn text-white bg-blue-600 hover:bg-blue-700 w-full sm:w-auto"
+                  href="https://app.unlock-protocol.com/event/block-chain-dev-fest"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Empowering Developers, Igniting Innovation, and Building Solutions for Africa's Future
-                </p>
-                <div
-                  className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
-                  data-aos="zoom-y-out"
-                  data-aos-delay="300"
+                  REGISTER
+                </a>
+                <a
+                  className="btn text-white bg-red-900 hover:bg-gray-800 w-full sm:w-auto"
+                  href="https://lu.ma/veliqhyg"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <div>
-                    <a
-                      className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
-                      href="https://app.unlock-protocol.com/event/block-chain-dev-fest"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      REGISTER
-                    </a>
-                  </div>
-                  <div>
-                    <a
-                      className="btn text-white bg-red-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
-                      href="https://lu.ma/veliqhyg"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      HACK
-                    </a>
-                  </div>
-                </div>
+                  HACK
+                </a>
               </div>
             </div>
           </div>
 
-          {/* Hero image */}
-          <ModalVideo
-            thumb={VideoThumb}
-            thumbWidth={768}
-            thumbHeight={432}
-            thumbAlt="Modal video thumbnail"
-            video="/videos/devfest.mp4"
-            videoWidth={1920}
-            videoHeight={1080}
-          />
+          {/* Hero Video */}
+          <div className="relative mt-10 max-w-4xl mx-auto px-4">
+            <ModalVideo
+              thumb={VideoThumb}
+              thumbWidth={768}
+              thumbHeight={432}
+              thumbAlt="Modal video thumbnail"
+              video="/videos/devfest.mp4"
+              videoWidth={1920}
+              videoHeight={1080}
+            />
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
+
+
+
+
+
+
+
+
+
+// import VideoThumb from "@/public/images/thumb_edit.png"
+// import ModalVideo from "@/components/modal-video"
+// import ImageCarousel from "@/components/image-carousel"
+
+// export default function Hero() {
+//   // Sample images for the carousel - replace with your actual images
+//   const carouselImages = [
+//     "/images/hack1.jpg",
+//     "/images/basePic.jpg",
+//     "/images/hack3.jpg",
+//      "/images/starknetPic.jpg",
+//     "/images/unlockPic.jpg",
+//     "/images/hack2.jpg",
+//     "/images/hack4.jpg"
+//   ]
+  
+
+//   return (
+//     <section className="relative">
+//       {/* Image carousel background */}
+//       <div className="absolute inset-0 pointer-events-none -z-10" aria-hidden="true">
+//         <ImageCarousel images={carouselImages} interval={6000} className="w-full h-full" />
+//       </div>
+
+//       {/* Subtle overlay to improve text visibility without obscuring images */}
+//       <div className="absolute inset-0 bg-black/20 pointer-events-none -z-5" aria-hidden="true"></div>
+
+//       <div className="max-w-6xl mx-auto px-4 sm:px-6">
+//         {/* Hero content - removed extra top padding since header is now static */}
+//         <div className="pt-12 pb-12 md:pt-2 md:pb-20">
+//           {/* Section header */}
+//           <div className="relative z-10">
+//             <div className="text-center pb-12 md:pb-16 p-6">
+//               <h1
+//                 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 text-white text-shadow-lg"
+//                 data-aos="zoom-y-out"
+//               >
+//                 Embrace the Blockchain Revolution <br></br>
+//                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-300 text-shadow-none">
+//                   DevFest Kampala 2025
+//                 </span>
+//               </h1>
+//               <div className="max-w-3xl mx-auto">
+//                 <p
+//                   className="text-xl text-white font-medium mb-8 text-shadow-md"
+//                   data-aos="zoom-y-out"
+//                   data-aos-delay="150"
+//                 >
+//                   Empowering Developers, Igniting Innovation, and Building Solutions for Africa's Future
+//                 </p>
+//                 <div
+//                   className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
+//                   data-aos="zoom-y-out"
+//                   data-aos-delay="300"
+//                 >
+//                   <div>
+//                     <a
+//                       className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
+//                       href="https://app.unlock-protocol.com/event/block-chain-dev-fest"
+//                       target="_blank"
+//                       rel="noopener noreferrer"
+//                     >
+//                       REGISTER
+//                     </a>
+//                   </div>
+//                   <div>
+//                     <a
+//                       className="btn text-white bg-red-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
+//                       href="https://lu.ma/veliqhyg"
+//                       target="_blank"
+//                       rel="noopener noreferrer"
+//                     >
+//                       HACK
+//                     </a>
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+
+//           {/* Hero image */}
+//           <ModalVideo
+//             thumb={VideoThumb}
+//             thumbWidth={768}
+//             thumbHeight={432}
+//             thumbAlt="Modal video thumbnail"
+//             video="/videos/devfest.mp4"
+//             videoWidth={1920}
+//             videoHeight={1080}
+//           />
+//         </div>
+//       </div>
+//     </section>
+//   )
+// }
 
 
 
