@@ -75,10 +75,10 @@ export default function Hero() {
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Empowering Developers, Igniting Innovation, and Building Solutions for Africa's Future</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.unlock-protocol.com/event/block-chain-dev-fest" target="_blank" rel="noopener noreferrer">REGISTER</a>
+                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.unlock-protocol.com/event/block-chain-developer-festival-5" target="_blank" rel="noopener noreferrer">REGISTER</a>
                 </div>
                 <div>
-                  <a className="btn text-white bg-red-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="https://forms.gle/oqPys2jHZw3ub2JN7" target="_blank" rel="noopener noreferrer">HACK</a>
+                  <a className="btn text-white bg-red-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="https://lu.ma/veliqhyg" target="_blank" rel="noopener noreferrer">HACK</a>
                 </div>
               </div>
             </div>
