@@ -56,7 +56,7 @@ export default function Hero() {
               >
                 <a
                   className="btn text-white bg-blue-600 hover:bg-blue-700 w-full sm:w-auto"
-                  href="https://app.unlock-protocol.com/event/block-chain-dev-fest"
+                  href="https://app.unlock-protocol.com/event/block-chain-developer-festival-5"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
