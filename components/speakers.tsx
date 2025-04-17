@@ -8,7 +8,7 @@ import elias from '@/public/images/pf.jpg';
 import david from '@/public/images/david.jpg';
 import jovan from '@/public/images/jovan.jpg';
 import daniel from '@/public/images/daniel.jpeg';
-import Bbosa from '@/public/images/Bbosa.jpg';
+import Bbosa from '@/public/images/bosa.png';
 
 // Speaker Data
 const speakers = [
