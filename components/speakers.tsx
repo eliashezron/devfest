@@ -36,12 +36,12 @@ const speakers = [
     image: daniel,
     bio: "Nasasira Daniel is a Technical Analyst at Gateway.fm, a leading provider of decentralized blockchain infrastructure. At Gateway, he plays a key role in enabling developers to build scalable, secure, and customizable rollup solutions using zkEVM and Optimistic technologies through Gateway’s flagship Rollup-as-a-Service product, Presto. With a strong foundation in data strategy and Web3, Nasasira leads Gateway’s regional efforts for Africa to support blockchain builders through infrastructure and blockchain tooling. Prior to joining Gateway, he worked at API7.ai where he contributed to the Apache APISIX open-source API Gateway project. His work helped enhance the growth and global adoption of one of the most performant and modern API gateways in the open-source ecosystem. Nasasira is also the founder of NASDAN and a creator of Humura Therapy, a digital mental health platform that has provided support to thousands of users globally. His passion lies at the intersection of blockchain infrastructure, data-driven decision-making, and technology social empowerment."
   },
-  {
-    name: "Lutalo Joseph Bbosa",
-    role: "Founder swiftramp",
-    image: Bbosa,
-    bio: "Software engineer building swiftramp, an on/off-ramp and cross border payment platform leveraging blockchain"
-  }
+  // {
+  //   name: "Lutalo Joseph Bbosa",
+  //   role: "Founder swiftramp",
+  //   image: Bbosa,
+  //   bio: "Software engineer building swiftramp, an on/off-ramp and cross border payment platform leveraging blockchain"
+  // }
 ];
 
 export default function Speakers() {
