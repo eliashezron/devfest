@@ -1,3 +1,188 @@
+// 'use client';
+
+// import { useState } from 'react';
+// import Slider from 'react-slick';
+// import { motion } from 'framer-motion';
+// import Image from 'next/image';
+// import elias from '@/public/images/pf.jpg';
+// import david from '@/public/images/david.jpg';
+// import jovan from '@/public/images/jova.jpeg';
+// import daniel from '@/public/images/daniel.jpeg';
+// import Bbosa from '@/public/images/lutalo.jpeg';
+// import dorcus from '@/public/images/Dorcus.png';
+// import vianey from '@/public/images/vianey.jpg';
+
+// // Helper function to trim text
+// const trimText = (text: string, maxLength: number) => {
+//   if (text.length <= maxLength) return text;
+//   return text.substring(0, maxLength) + '...';
+// };
+
+// // Speaker Data
+// const speakers = [
+//   {
+//     name: "David Lumala",
+//     role: "Co-Founder Epoch Infinity",
+//     image: david,
+//     bio: "David Lumala is an expert in blockchain and decentralized applications, co-founding Epoch Infinity to drive blockchain adoption in Africa."
+//   },
+//   {
+//     name: "Elias Hezron",
+//     role: "Co-Founder Oneramp & Shukuru Wallet",
+//     image: elias,
+//     bio: "Elias Hezron is a visionary entrepreneur and blockchain advocate, co-founding Oneramp and Shukuru Wallet to make digital finance more accessible."
+//   },
+//   {
+//     name: "Jovan Mwesigwa",
+//     role: "Co-Founder Oneramp & Shukuru Wallet",
+//     image: jovan,
+//     bio: "Jovan is a blockchain developer and advocate, working on innovative solutions in Web3 and digital asset management."
+//   },
+//    {
+//     name: "Dorcus Mathu",
+//     role: "A 𝐫𝐞𝐧𝐨𝐰𝐧𝐞𝐝 𝐁𝐮𝐬𝐢𝐧𝐞𝐬𝐬 𝐆𝐫𝐨𝐰𝐭𝐡 𝐒𝐭𝐫𝐚𝐭𝐞𝐠𝐢𝐬𝐭, 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐈𝐧𝐧𝐨𝐯𝐚𝐭𝐢𝐨𝐧 𝐃𝐫𝐢𝐯𝐞𝐫, 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐓𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐄𝐱𝐩𝐞𝐫𝐭, 𝐅𝐢𝐧𝐚𝐧𝐜𝐞 𝐀𝐧𝐚𝐥𝐲𝐬𝐭, 𝐃𝐚𝐭𝐚 𝐀𝐧𝐚𝐥𝐲𝐬𝐭, 𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫, 𝐄𝐱𝐞𝐜𝐮𝐭𝐢𝐯𝐞 𝐂𝐨𝐚𝐜𝐡, 𝐚𝐧𝐝 𝐈𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐒𝐩𝐞𝐚𝐤𝐞𝐫.",
+//     image: dorcus,
+//     bio: "With over a decade of experience, Dorcus Mathu specializes in 𝐝𝐫𝐢𝐯𝐢𝐧𝐠 𝐝𝐢𝐠𝐢𝐭𝐚𝐥 𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧, 𝐬𝐭𝐫𝐚𝐭𝐞𝐠𝐢𝐜 𝐠𝐫𝐨𝐰𝐭𝐡, 𝐚𝐧𝐝 𝐨𝐩𝐞𝐫𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐞𝐱𝐜𝐞𝐥𝐥𝐞𝐧𝐜𝐞 for organizations worldwide. Her expertise spans 𝐟𝐢𝐧𝐚𝐧𝐜𝐞, 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲, 𝐚𝐧𝐝 𝐝𝐚𝐭𝐚 𝐚𝐧𝐚𝐥𝐲𝐭𝐢𝐜𝐬, enabling businesses to streamline operations, leverage data-driven insights, and implement 𝐬𝐜𝐚𝐥𝐚𝐛𝐥𝐞 𝐝𝐢𝐠𝐢𝐭𝐚𝐥 𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧𝐬. As a 𝐯𝐢𝐬𝐢𝐨𝐧𝐚𝐫𝐲 𝐥𝐞𝐚𝐝𝐞𝐫, Dorcus helps organizations embrace 𝐜𝐮𝐭𝐭𝐢𝐧𝐠-𝐞𝐝𝐠𝐞 𝐰𝐞𝐛-𝐛𝐚𝐬𝐞𝐝 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬 such as 𝐰𝐞𝐛𝐬𝐢𝐭𝐞𝐬, 𝐂𝐑𝐌𝐬, 𝐒𝐨𝐜𝐢𝐚𝐥 𝐌𝐞𝐝𝐢𝐚 among others to enhance efficiency and long-term sustainability. Beyond her technical and financial acumen, Dorcus is a 𝐭𝐫𝐮𝐬𝐭𝐞𝐝 𝐞𝐱𝐞𝐜𝐮𝐭𝐢𝐯𝐞 𝐜𝐨𝐚𝐜𝐡 𝐚𝐧𝐝 𝐠𝐥𝐨𝐛𝐚𝐥 𝐬𝐩𝐞𝐚𝐤𝐞𝐫, empowering leaders with strategies to 𝐧𝐚𝐯𝐢𝐠𝐚𝐭𝐞 𝐜𝐡𝐚𝐧𝐠𝐞, 𝐨𝐩𝐭𝐢𝐦𝐢𝐳𝐞 𝐛𝐮𝐬𝐢𝐧𝐞𝐬𝐬 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞, 𝐚𝐧𝐝 𝐡𝐚𝐫𝐧𝐞𝐬𝐬 𝐝𝐢𝐠𝐢𝐭𝐚𝐥 𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐟𝐨𝐫 𝐜𝐨𝐦𝐩𝐞𝐭𝐢𝐭𝐢𝐯𝐞 𝐚𝐝𝐯𝐚𝐧𝐭𝐚𝐠𝐞. She welcomes opportunities for 𝐜𝐨𝐥𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐢𝐨𝐧𝐬, 𝐬𝐭𝐫𝐚𝐭𝐞𝐠𝐢𝐜 𝐩𝐚𝐫𝐭𝐧𝐞𝐫𝐬𝐡𝐢𝐩𝐬, 𝐚𝐧𝐝 𝐭𝐡𝐨𝐮𝐠𝐡𝐭 𝐥𝐞𝐚𝐝𝐞𝐫𝐬𝐡𝐢𝐩 𝐞𝐧𝐠𝐚𝐠𝐞𝐦𝐞𝐧𝐭𝐬 in 𝐟𝐢𝐧𝐚𝐧𝐜𝐞, 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲, 𝐚𝐧𝐝 𝐛𝐮𝐬𝐢𝐧𝐞𝐬𝐬 𝐠𝐫𝐨𝐰𝐭𝐡. 🌐 Website: www.dorcusmathu.com Social Media: @dorcusmathu"
+//   },
+//   {
+//     name: "Daniel Nasasira",
+//     role: "Technical Analyst at Gateway.fm",
+//     image: daniel,
+//     bio: "Nasasira Daniel is a Technical Analyst at Gateway.fm, a leading provider of decentralized blockchain infrastructure. At Gateway, he plays a key role in enabling developers to build scalable, secure, and customizable rollup solutions using zkEVM and Optimistic technologies through Gateway’s flagship Rollup-as-a-Service product, Presto. With a strong foundation in data strategy and Web3, Nasasira leads Gateway’s regional efforts for Africa to support blockchain builders through infrastructure and blockchain tooling. Prior to joining Gateway, he worked at API7.ai where he contributed to the Apache APISIX open-source API Gateway project. His work helped enhance the growth and global adoption of one of the most performant and modern API gateways in the open-source ecosystem. Nasasira is also the founder of NASDAN and a creator of Humura Therapy, a digital mental health platform that has provided support to thousands of users globally. His passion lies at the intersection of blockchain infrastructure, data-driven decision-making, and technology social empowerment."
+//   },
+//   {
+//     name: "Lutalo Joseph Bbosa",
+//     role: "Founder swiftramp",
+//     image: Bbosa,
+//     bio: "Software engineer building swiftramp, an on/off-ramp and cross border payment platform leveraging blockchain"
+//   },
+//   {
+//     name: "Kakooza Vianey",
+//     role: "Founder Decentracode",
+//     image: vianey,
+//     bio: "Software engineer building  at Decentracode"
+//   }
+// ];
+
+// export default function Speakers() {
+//   const [selectedSpeaker, setSelectedSpeaker] = useState<null | typeof speakers[0]>(null);
+
+//   // Slider settings
+//   const settings = {
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 3000,
+//     responsive: [
+//       { breakpoint: 1024, settings: { slidesToShow: 2 } },
+//       { breakpoint: 768, settings: { slidesToShow: 1 } }
+//     ]
+//   };
+
+//   return (
+//     <section className="relative py-12 md:py-20">
+//       {/* ... (rest of your layout code) */}
+
+//       {/* Speaker Carousel */}
+//       <Slider {...settings} className="px-4">
+//         {speakers.map((speaker, index) => (
+//           <motion.div
+//             key={index}
+//             whileHover={{ scale: 1.05 }}
+//             whileTap={{ scale: 0.95 }}
+//             className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl cursor-pointer h-full"
+//             onClick={() => setSelectedSpeaker(speaker)}
+//           >
+//             <div className="flex justify-center items-center">
+//               <Image
+//                 className="rounded-full"
+//                 src={speaker.image}
+//                 width={150}
+//                 height={150}
+//                 alt={speaker.name}
+//               />
+//             </div>
+//             <h4 className="text-xl font-bold leading-snug tracking-tight text-center mt-4">
+//               {speaker.name}
+//             </h4>
+//             <p className="text-gray-600 text-center">{speaker.role}</p>
+//             {/* Trimmed bio preview */}
+//             <p className="mt-2 text-gray-600 text-center text-sm">
+//               {trimText(speaker.bio, 100)} {/* Show first 100 chars */}
+//             </p>
+//           </motion.div>
+//         ))}
+//       </Slider>
+
+//       {/* Speaker Details Modal */}
+//       {selectedSpeaker && (
+//         <motion.div
+//           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-md p-4 z-50"
+//           initial={{ opacity: 0 }}
+//           animate={{ opacity: 1 }}
+//           exit={{ opacity: 0 }}
+//           onClick={() => setSelectedSpeaker(null)}
+//         >
+//           <motion.div
+//             className="bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4 max-h-[80vh] flex flex-col"
+//             initial={{ scale: 0.9 }}
+//             animate={{ scale: 1 }}
+//             exit={{ scale: 0.9 }}
+//             onClick={(e) => e.stopPropagation()}
+//           >
+//             {/* Modal Content */}
+//             <div className="p-6 overflow-y-auto flex-1">
+//               <div className="flex flex-col items-center">
+//                 <Image
+//                   className="rounded-full"
+//                   src={selectedSpeaker.image}
+//                   width={150}
+//                   height={150}
+//                   alt={selectedSpeaker.name}
+//                 />
+//                 <h3 className="text-2xl font-bold mt-4 text-center">
+//                   {selectedSpeaker.name}
+//                 </h3>
+//                 <p className="text-gray-600 text-center">
+//                   {selectedSpeaker.role}
+//                 </p>
+//               </div>
+//               {/* Full bio with scrolling */}
+//               <div className="mt-4 p-4 bg-gray-50 rounded-lg max-h-[40vh] overflow-y-auto">
+//                 <p className="text-gray-800">{selectedSpeaker.bio}</p>
+//               </div>
+//             </div>
+//             {/* Close button (always visible at bottom) */}
+//             <div className="p-4 border-t border-gray-200 flex justify-center">
+//               <button
+//                 className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition"
+//                 onClick={() => setSelectedSpeaker(null)}
+//               >
+//                 Close
+//               </button>
+//             </div>
+//           </motion.div>
+//         </motion.div>
+//       )}
+//     </section>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 'use client';
 
 import { useState } from 'react';
@@ -6,9 +191,11 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import elias from '@/public/images/pf.jpg';
 import david from '@/public/images/david.jpg';
-import jovan from '@/public/images/jovan.jpg';
+import jovan from '@/public/images/jova.jpeg';
 import daniel from '@/public/images/daniel.jpeg';
-import Bbosa from '@/public/images/bosa.png';
+import Bbosa from '@/public/images/lutalo.jpeg';
+import dorcus from '@/public/images/Dorcus.png';
+import vianey from '@/public/images/vianey.jpeg';
 
 // Speaker Data
 const speakers = [
@@ -30,19 +217,37 @@ const speakers = [
     image: jovan,
     bio: "Jovan is a blockchain developer and advocate, working on innovative solutions in Web3 and digital asset management."
   },
+   {
+    name: "Dorcus Mathu",
+    role: "𝐃𝐚𝐭𝐚 𝐀𝐧𝐚𝐥𝐲𝐬𝐭, 𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫,  𝐈𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐒𝐩𝐞𝐚𝐤𝐞𝐫.",
+    image: dorcus,
+    bio: "A 𝐫𝐞𝐧𝐨𝐰𝐧𝐞𝐝 𝐁𝐮𝐬𝐢𝐧𝐞𝐬𝐬 𝐆𝐫𝐨𝐰𝐭𝐡 𝐒𝐭𝐫𝐚𝐭𝐞𝐠𝐢𝐬𝐭, 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐈𝐧𝐧𝐨𝐯𝐚𝐭𝐢𝐨𝐧 𝐃𝐫𝐢𝐯𝐞𝐫, 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐓𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐄𝐱𝐩𝐞𝐫𝐭, 𝐅𝐢𝐧𝐚𝐧𝐜𝐞 𝐀𝐧𝐚𝐥𝐲𝐬𝐭, 𝐃𝐚𝐭𝐚 𝐀𝐧𝐚𝐥𝐲𝐬𝐭, 𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫, 𝐄𝐱𝐞𝐜𝐮𝐭𝐢𝐯𝐞 𝐂𝐨𝐚𝐜𝐡, 𝐚𝐧𝐝 𝐈𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐒𝐩𝐞𝐚𝐤𝐞𝐫. With over a decade of experience, Dorcus Mathu specializes in 𝐝𝐫𝐢𝐯𝐢𝐧𝐠 𝐝𝐢𝐠𝐢𝐭𝐚𝐥 𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧, 𝐬𝐭𝐫𝐚𝐭𝐞𝐠𝐢𝐜 𝐠𝐫𝐨𝐰𝐭𝐡, 𝐚𝐧𝐝 𝐨𝐩𝐞𝐫𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐞𝐱𝐜𝐞𝐥𝐥𝐞𝐧𝐜𝐞 for organizations worldwide. Her expertise spans 𝐟𝐢𝐧𝐚𝐧𝐜𝐞, 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲, 𝐚𝐧𝐝 𝐝𝐚𝐭𝐚 𝐚𝐧𝐚𝐥𝐲𝐭𝐢𝐜𝐬, enabling businesses to streamline operations, leverage data-driven insights, and implement 𝐬𝐜𝐚𝐥𝐚𝐛𝐥𝐞 𝐝𝐢𝐠𝐢𝐭𝐚𝐥 𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧𝐬. As a 𝐯𝐢𝐬𝐢𝐨𝐧𝐚𝐫𝐲 𝐥𝐞𝐚𝐝𝐞𝐫, Dorcus helps organizations embrace 𝐜𝐮𝐭𝐭𝐢𝐧𝐠-𝐞𝐝𝐠𝐞 𝐰𝐞𝐛-𝐛𝐚𝐬𝐞𝐝 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬 such as 𝐰𝐞𝐛𝐬𝐢𝐭𝐞𝐬, 𝐂𝐑𝐌𝐬, 𝐒𝐨𝐜𝐢𝐚𝐥 𝐌𝐞𝐝𝐢𝐚 among others to enhance efficiency and long-term sustainability. Beyond her technical and financial acumen, Dorcus is a 𝐭𝐫𝐮𝐬𝐭𝐞𝐝 𝐞𝐱𝐞𝐜𝐮𝐭𝐢𝐯𝐞 𝐜𝐨𝐚𝐜𝐡 𝐚𝐧𝐝 𝐠𝐥𝐨𝐛𝐚𝐥 𝐬𝐩𝐞𝐚𝐤𝐞𝐫, empowering leaders with strategies to 𝐧𝐚𝐯𝐢𝐠𝐚𝐭𝐞 𝐜𝐡𝐚𝐧𝐠𝐞, 𝐨𝐩𝐭𝐢𝐦𝐢𝐳𝐞 𝐛𝐮𝐬𝐢𝐧𝐞𝐬𝐬 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞, 𝐚𝐧𝐝 𝐡𝐚𝐫𝐧𝐞𝐬𝐬 𝐝𝐢𝐠𝐢𝐭𝐚𝐥 𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐟𝐨𝐫 𝐜𝐨𝐦𝐩𝐞𝐭𝐢𝐭𝐢𝐯𝐞 𝐚𝐝𝐯𝐚𝐧𝐭𝐚𝐠𝐞. She welcomes opportunities for 𝐜𝐨𝐥𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐢𝐨𝐧𝐬, 𝐬𝐭𝐫𝐚𝐭𝐞𝐠𝐢𝐜 𝐩𝐚𝐫𝐭𝐧𝐞𝐫𝐬𝐡𝐢𝐩𝐬, 𝐚𝐧𝐝 𝐭𝐡𝐨𝐮𝐠𝐡𝐭 𝐥𝐞𝐚𝐝𝐞𝐫𝐬𝐡𝐢𝐩 𝐞𝐧𝐠𝐚𝐠𝐞𝐦𝐞𝐧𝐭𝐬 in 𝐟𝐢𝐧𝐚𝐧𝐜𝐞, 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲, 𝐚𝐧𝐝 𝐛𝐮𝐬𝐢𝐧𝐞𝐬𝐬 𝐠𝐫𝐨𝐰𝐭𝐡. 🌐 Website: www.dorcusmathu.com Social Media: @dorcusmathu"
+  },
   {
     name: "Daniel Nasasira",
     role: "Technical Analyst at Gateway.fm",
     image: daniel,
     bio: "Nasasira Daniel is a Technical Analyst at Gateway.fm, a leading provider of decentralized blockchain infrastructure. At Gateway, he plays a key role in enabling developers to build scalable, secure, and customizable rollup solutions using zkEVM and Optimistic technologies through Gateway’s flagship Rollup-as-a-Service product, Presto. With a strong foundation in data strategy and Web3, Nasasira leads Gateway’s regional efforts for Africa to support blockchain builders through infrastructure and blockchain tooling. Prior to joining Gateway, he worked at API7.ai where he contributed to the Apache APISIX open-source API Gateway project. His work helped enhance the growth and global adoption of one of the most performant and modern API gateways in the open-source ecosystem. Nasasira is also the founder of NASDAN and a creator of Humura Therapy, a digital mental health platform that has provided support to thousands of users globally. His passion lies at the intersection of blockchain infrastructure, data-driven decision-making, and technology social empowerment."
   },
-  // {
-  //   name: "Lutalo Joseph Bbosa",
-  //   role: "Founder swiftramp",
-  //   image: Bbosa,
-  //   bio: "Software engineer building swiftramp, an on/off-ramp and cross border payment platform leveraging blockchain"
-  // }
+  {
+    name: "Lutalo Joseph Bbosa",
+    role: "Founder swiftramp",
+    image: Bbosa,
+    bio: "Software engineer building swiftramp, an on/off-ramp and cross border payment platform leveraging blockchain"
+  },
+  {
+    name: "Kakooza Vianey",
+    role: "Founder Decentracode",
+    image: vianey,
+    bio: "Software engineer building  at Decentracode"
+  }
 ];
+
+// Helper function to trim text
+  const trimText = (text: string, maxLength: number) => {
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength) + '...';
+  };
 
 export default function Speakers() {
   const [selectedSpeaker, setSelectedSpeaker] = useState<null | typeof speakers[0]>(null);
@@ -98,6 +303,9 @@ export default function Speakers() {
                  </div>
                 <h4 className="text-xl font-bold leading-snug tracking-tight  text-center mt-4">{speaker.name}</h4>
                 <p className="text-gray-600 text-center">{speaker.role}</p>
+                {/* <p className="mt-2 text-gray-600 text-center text-sm">
+                 {trimText(speaker.bio, 100)} 
+                </p> */}
               </motion.div>
             ))}
           </Slider>
@@ -112,22 +320,32 @@ export default function Speakers() {
               onClick={() => setSelectedSpeaker(null)}
             >
               <motion.div
-                className="bg-white p-6 rounded-lg shadow-xl max-w-lg w-full text-center"
+                // className="bg-white p-6 rounded-lg shadow-xl max-w-lg w-full text-center"
+                className="bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4 max-h-[80vh] flex flex-col"
                 initial={{ y: 50 }}
                 animate={{ y: 0 }}
                 exit={{ y: 50 }}
                 onClick={(e) => e.stopPropagation()}
               >
-                <Image className="rounded-full mx-auto" src={selectedSpeaker.image} width={200} height={200} alt={selectedSpeaker.name} />
-                <h3 className="text-2xl font-bold mt-4">{selectedSpeaker.name}</h3>
-                <p className="text-gray-600">{selectedSpeaker.role}</p>
-                <p className="mt-4 text-gray-800">{selectedSpeaker.bio}</p>
-                <button
-                  className="mt-6 px-4 py-2 bg-red-500 text-white rounded-md"
-                  onClick={() => setSelectedSpeaker(null)}
-                >
-                  Close
-                </button>
+                <div className="p-6 overflow-y-auto flex-1">
+                  <div className="flex flex-col items-center">
+                    <Image className="rounded-full mx-auto" src={selectedSpeaker.image} width={200} height={200} alt={selectedSpeaker.name} />
+                    <h3 className="text-2xl font-bold mt-4">{selectedSpeaker.name}</h3>
+                    <p className="text-gray-600">{selectedSpeaker.role}</p>
+                  </div>
+                    <div className="mt-4 p-4 bg-gray-50 rounded-lg max-h-[40vh] overflow-y-auto">
+                      <p className="mt-4 text-gray-800">{selectedSpeaker.bio}</p>
+                    </div>
+                </div>
+                <div className="p-4 border-t border-gray-200 flex justify-center">
+                  <button
+                    className="mt-6 px-4 py-2 bg-red-500 text-white rounded-md"
+                    onClick={() => setSelectedSpeaker(null)}
+                  >
+                    Close
+                  </button>
+                </div>
+             
               </motion.div>
             </motion.div>
           )}

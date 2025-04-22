@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
+import Link from 'next/link'
 
 const FAQs = () => {
   const faqItems = [
@@ -20,21 +21,33 @@ const FAQs = () => {
     {
       question: 'How do I apply to be a hacker?',
       answer:
-        'To apply as a hacker, you need to visit our Apply page and fill out the form with your personal information, experience, and interests.',
+        (
+          <p>
+            To apply as a hacker, you need to fill out the <Link href="https://lu.ma/veliqhyg" className="text-blue-600 hover:underline">form</Link> with your personal information, experience, and interests.
+          </p>
+        )
     },
     {
       question: 'How do I become a sponsor?',
       answer:
-        "If you're interested in becoming a sponsor, please fill out the sponsorship form and we shall reach out to you.",
+        (
+          <p>
+            If you're interested in becoming a sponsor, please fill out the sponsorship <Link href="https://tally.so/r/mOVg1K" className="text-blue-600 hover:underline">form</Link> and we shall reach out to you.
+          </p>
+        )
     },
     {
       question: 'How can I become a speaker?',
       answer:
-        'To become a speaker, you need to fill out the Speaker Application form on our website with your personal and professional information, topics of interest, and speaking experience.',
+        (
+          <p>
+            To become a speaker, you need to fill out the Speaker Application <Link href="https://forms.gle/byKQ6uF5LEwM4qcE9" className="text-blue-600 hover:underline" >form</Link> with your personal and professional information, topics of interest, and speaking experience.
+          </p>
+        )
     },
     {
       question: 'How can I get in touch with BlockBunch?',
-      answer: 'You can contact us through our social media channels.',
+      answer: `You can contact us through our social media channels.`
     },
   ]
 
@@ -44,11 +57,15 @@ const FAQs = () => {
     setActiveIndex(activeIndex === index ? null : index)
   }
 
+  // https://tally.so/r/mOVg1K
+  //speaker form: https://forms.gle/byKQ6uF5LEwM4qcE9
+
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="FAQs">
       <h2 className="text-center text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
         Frequently Asked Questions
       </h2>
+    
 
       <div className="space-y-4">
         {faqItems.map((item, index) => (
