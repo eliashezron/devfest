@@ -9,6 +9,7 @@ import david from '@/public/images/david.jpg'
 import angie from '@/public/images/Angellina.jpeg'
 import blank from '@/public/images/blank.svg'
 import jovan from '@/public/images/jovan.jpg'
+import vianey from '@/public/images/vianey.jpeg';
 
 const testimonialsData = [
   {
@@ -18,19 +19,25 @@ const testimonialsData = [
     avatar: david
   },
   {
-    quote: '" Blockchain devFest Kampala 2025 exceeded all my expectations. Inspiring speakers, valuable networking, and practical workshops made it an event not to be missed. Highly recommended!"',
+    quote: '" Attending the devfest hackathon opened my view of decentralisation as a core value proposition of Blockchains.  I attended the 2023 edition in which I met my cofounder and so many other people who have helped us elevate our startup to the extent that we are soon doing a Series A. I thank and laud the organisers for this visionary idea of what convening like minds can do with devfest. I look forward to more editions and encourage all people to attend as Web3 has space for everyone and Blockchain Developer Festival is where your biggest opportunity yet is to start."',
+    name: 'Jovan Mwesigwa',
+    title: 'Co-Founder Oneramp & Shukuru Wallet',
+    avatar: jovan
+  },
+  {
+    quote: '" Attending DevFest has been a game-changer for me. It didn’t just open the door to Web3—it kicked it wide open. Through the connections I made, I got into the Web3Bridge program in Nigeria, where I deepened my understanding and sharpened my skills as a developer in web3 . That experience gave me the clarity and confidence to start building in the space. If you are a dev curious about the future of tech, DevFest is where you want to be"',
     name: 'Angella Mulikatete',
     title: 'software Engineer',
     avatar: angie
   },
   {
-    quote: '" Blockchain devFest Kampala 2025 exceeded all my expectations. Inspiring speakers, valuable networking, and practical workshops made it an event not to be missed. Highly recommended!"',
-    name: 'Elias Hezron',
-    title: 'Co-Founder Oneramp & Shukuru Wallet',
-    avatar: elias
+    quote: '" I have participated in 3 editions of the Blockchain Developer Festival and i cant thank more the organisers for their thoughtful idea to convene all web3 enthusiasts  in a single place . Across all domains, i met different tech players , founders and  consumers alike . I participated in their last 2 hackathons which formed a baseline for my current web3 education startup. DevFest is the birthplace for Decentracode."',
+    name: 'Vianey Kakooza',
+    title: 'Founder Decentracode',
+    avatar: vianey
   },
   {
-    quote: '" Blockchain devFest Kampala 2025 exceeded all my expectations. Inspiring speakers, valuable networking, and practical workshops made it an event not to be missed. Highly recommended!"',
+    quote: '" Attending the devfest hackathon opened my view of decentralisation as a core value proposition of Blockchains.  I attended the 2023 edition in which I met my cofounder and so many other people who have helped us elevate our startup to the extent that we are soon doing a Series A. I thank and laud the organisers for this visionary idea of what convening like minds can do with devfest. I look forward to more editions and encourage all people to attend as Web3 has space for everyone and Blockchain Developer Festival is where your biggest opportunity yet is to start."',
     name: 'Jovan Mwesigwa',
     title: 'Co-Founder Oneramp & Shukuru Wallet',
     avatar: jovan
