@@ -195,6 +195,11 @@ import jovan from '@/public/images/jova.jpeg';
 import daniel from '@/public/images/daniel.jpeg';
 import Bbosa from '@/public/images/lutalo.jpeg';
 import dorcus from '@/public/images/Dorcus.png';
+import edgar from '@/public/images/edgar.png';
+import israel from '@/public/images/israel.jpg';
+import jimmy from '@/public/images/jimmy.jpg';
+import moses from '@/public/images/moses.jpg';
+import vicent from '@/public/images/vicent.jpg';
 import vianey from '@/public/images/vianey.jpeg';
 
 // Speaker Data
@@ -206,11 +211,12 @@ const speakers = [
     bio: "David Lumala is an expert in blockchain and decentralized applications, co-founding Epoch Infinity to drive blockchain adoption in Africa."
   },
   {
-    name: "Elias Hezron",
-    role: "Co-Founder Oneramp & Shukuru Wallet",
-    image: elias,
-    bio: "Elias Hezron is a visionary entrepreneur and blockchain advocate, co-founding Oneramp and Shukuru Wallet to make digital finance more accessible."
+    name: "Awosika Israel Ayodeji",
+    role: "Founder Web3bridge",
+    image: israel,
+    bio: "Founder Web3bridge"
   },
+
   {
     name: "Jovan Mwesigwa",
     role: "Co-Founder Oneramp & Shukuru Wallet",
@@ -219,9 +225,9 @@ const speakers = [
   },
    {
     name: "Dorcus Mathu",
-    role: "𝐃𝐚𝐭𝐚 𝐀𝐧𝐚𝐥𝐲𝐬𝐭, 𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫,  𝐈𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐒𝐩𝐞𝐚𝐤𝐞𝐫.",
+    role: "Data Analyst, Software Developer",
     image: dorcus,
-    bio: "A 𝐫𝐞𝐧𝐨𝐰𝐧𝐞𝐝 𝐁𝐮𝐬𝐢𝐧𝐞𝐬𝐬 𝐆𝐫𝐨𝐰𝐭𝐡 𝐒𝐭𝐫𝐚𝐭𝐞𝐠𝐢𝐬𝐭, 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐈𝐧𝐧𝐨𝐯𝐚𝐭𝐢𝐨𝐧 𝐃𝐫𝐢𝐯𝐞𝐫, 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐓𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐄𝐱𝐩𝐞𝐫𝐭, 𝐅𝐢𝐧𝐚𝐧𝐜𝐞 𝐀𝐧𝐚𝐥𝐲𝐬𝐭, 𝐃𝐚𝐭𝐚 𝐀𝐧𝐚𝐥𝐲𝐬𝐭, 𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫, 𝐄𝐱𝐞𝐜𝐮𝐭𝐢𝐯𝐞 𝐂𝐨𝐚𝐜𝐡, 𝐚𝐧𝐝 𝐈𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐒𝐩𝐞𝐚𝐤𝐞𝐫. With over a decade of experience, Dorcus Mathu specializes in 𝐝𝐫𝐢𝐯𝐢𝐧𝐠 𝐝𝐢𝐠𝐢𝐭𝐚𝐥 𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧, 𝐬𝐭𝐫𝐚𝐭𝐞𝐠𝐢𝐜 𝐠𝐫𝐨𝐰𝐭𝐡, 𝐚𝐧𝐝 𝐨𝐩𝐞𝐫𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐞𝐱𝐜𝐞𝐥𝐥𝐞𝐧𝐜𝐞 for organizations worldwide. Her expertise spans 𝐟𝐢𝐧𝐚𝐧𝐜𝐞, 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲, 𝐚𝐧𝐝 𝐝𝐚𝐭𝐚 𝐚𝐧𝐚𝐥𝐲𝐭𝐢𝐜𝐬, enabling businesses to streamline operations, leverage data-driven insights, and implement 𝐬𝐜𝐚𝐥𝐚𝐛𝐥𝐞 𝐝𝐢𝐠𝐢𝐭𝐚𝐥 𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧𝐬. As a 𝐯𝐢𝐬𝐢𝐨𝐧𝐚𝐫𝐲 𝐥𝐞𝐚𝐝𝐞𝐫, Dorcus helps organizations embrace 𝐜𝐮𝐭𝐭𝐢𝐧𝐠-𝐞𝐝𝐠𝐞 𝐰𝐞𝐛-𝐛𝐚𝐬𝐞𝐝 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬 such as 𝐰𝐞𝐛𝐬𝐢𝐭𝐞𝐬, 𝐂𝐑𝐌𝐬, 𝐒𝐨𝐜𝐢𝐚𝐥 𝐌𝐞𝐝𝐢𝐚 among others to enhance efficiency and long-term sustainability. Beyond her technical and financial acumen, Dorcus is a 𝐭𝐫𝐮𝐬𝐭𝐞𝐝 𝐞𝐱𝐞𝐜𝐮𝐭𝐢𝐯𝐞 𝐜𝐨𝐚𝐜𝐡 𝐚𝐧𝐝 𝐠𝐥𝐨𝐛𝐚𝐥 𝐬𝐩𝐞𝐚𝐤𝐞𝐫, empowering leaders with strategies to 𝐧𝐚𝐯𝐢𝐠𝐚𝐭𝐞 𝐜𝐡𝐚𝐧𝐠𝐞, 𝐨𝐩𝐭𝐢𝐦𝐢𝐳𝐞 𝐛𝐮𝐬𝐢𝐧𝐞𝐬𝐬 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞, 𝐚𝐧𝐝 𝐡𝐚𝐫𝐧𝐞𝐬𝐬 𝐝𝐢𝐠𝐢𝐭𝐚𝐥 𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐟𝐨𝐫 𝐜𝐨𝐦𝐩𝐞𝐭𝐢𝐭𝐢𝐯𝐞 𝐚𝐝𝐯𝐚𝐧𝐭𝐚𝐠𝐞. She welcomes opportunities for 𝐜𝐨𝐥𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐢𝐨𝐧𝐬, 𝐬𝐭𝐫𝐚𝐭𝐞𝐠𝐢𝐜 𝐩𝐚𝐫𝐭𝐧𝐞𝐫𝐬𝐡𝐢𝐩𝐬, 𝐚𝐧𝐝 𝐭𝐡𝐨𝐮𝐠𝐡𝐭 𝐥𝐞𝐚𝐝𝐞𝐫𝐬𝐡𝐢𝐩 𝐞𝐧𝐠𝐚𝐠𝐞𝐦𝐞𝐧𝐭𝐬 in 𝐟𝐢𝐧𝐚𝐧𝐜𝐞, 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲, 𝐚𝐧𝐝 𝐛𝐮𝐬𝐢𝐧𝐞𝐬𝐬 𝐠𝐫𝐨𝐰𝐭𝐡. 🌐 Website: www.dorcusmathu.com Social Media: @dorcusmathu"
+    bio: "A reowned Business Growth Strategist, Digital Innovation Driver, Digital Transformation Expert, Finance Analyst, Data Analyst, software Developer, Executive Coach and Internation Speaker. With over a decade of experience, Dorcus Mathu specializes in driving digital transformation , strategic growth and operation excellence for organizations worldwide. Her expertise spans 𝐟𝐢𝐧𝐚𝐧𝐜𝐞, 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲, 𝐚𝐧𝐝 𝐝𝐚𝐭𝐚 𝐚𝐧𝐚𝐥𝐲𝐭𝐢𝐜𝐬, enabling businesses to streamline operations, leverage data-driven insights, and implement 𝐬𝐜𝐚𝐥𝐚𝐛𝐥𝐞 𝐝𝐢𝐠𝐢𝐭𝐚𝐥 𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧𝐬. As a 𝐯𝐢𝐬𝐢𝐨𝐧𝐚𝐫𝐲 𝐥𝐞𝐚𝐝𝐞𝐫, Dorcus helps organizations embrace 𝐜𝐮𝐭𝐭𝐢𝐧𝐠-𝐞𝐝𝐠𝐞 𝐰𝐞𝐛-𝐛𝐚𝐬𝐞𝐝 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬 such as 𝐰𝐞𝐛𝐬𝐢𝐭𝐞𝐬, 𝐂𝐑𝐌𝐬, 𝐒𝐨𝐜𝐢𝐚𝐥 𝐌𝐞𝐝𝐢𝐚 among others to enhance efficiency and long-term sustainability. Beyond her technical and financial acumen, Dorcus is a 𝐭𝐫𝐮𝐬𝐭𝐞𝐝 𝐞𝐱𝐞𝐜𝐮𝐭𝐢𝐯𝐞 𝐜𝐨𝐚𝐜𝐡 𝐚𝐧𝐝 𝐠𝐥𝐨𝐛𝐚𝐥 𝐬𝐩𝐞𝐚𝐤𝐞𝐫, empowering leaders with strategies to 𝐧𝐚𝐯𝐢𝐠𝐚𝐭𝐞 𝐜𝐡𝐚𝐧𝐠𝐞, 𝐨𝐩𝐭𝐢𝐦𝐢𝐳𝐞 𝐛𝐮𝐬𝐢𝐧𝐞𝐬𝐬 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞, 𝐚𝐧𝐝 𝐡𝐚𝐫𝐧𝐞𝐬𝐬 𝐝𝐢𝐠𝐢𝐭𝐚𝐥 𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐟𝐨𝐫 𝐜𝐨𝐦𝐩𝐞𝐭𝐢𝐭𝐢𝐯𝐞 𝐚𝐝𝐯𝐚𝐧𝐭𝐚𝐠𝐞. She welcomes opportunities for 𝐜𝐨𝐥𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐢𝐨𝐧𝐬, 𝐬𝐭𝐫𝐚𝐭𝐞𝐠𝐢𝐜 𝐩𝐚𝐫𝐭𝐧𝐞𝐫𝐬𝐡𝐢𝐩𝐬, 𝐚𝐧𝐝 𝐭𝐡𝐨𝐮𝐠𝐡𝐭 𝐥𝐞𝐚𝐝𝐞𝐫𝐬𝐡𝐢𝐩 𝐞𝐧𝐠𝐚𝐠𝐞𝐦𝐞𝐧𝐭𝐬 in 𝐟𝐢𝐧𝐚𝐧𝐜𝐞, 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲, 𝐚𝐧𝐝 𝐛𝐮𝐬𝐢𝐧𝐞𝐬𝐬 𝐠𝐫𝐨𝐰𝐭𝐡. 🌐 Website: www.dorcusmathu.com Social Media: @dorcusmathu"
   },
   {
     name: "Daniel Nasasira",
@@ -240,7 +246,31 @@ const speakers = [
     role: "Founder Decentracode",
     image: vianey,
     bio: "Software engineer building  at Decentracode"
-  }
+  },
+  {
+    name: "Moses Mrima Mbanga",
+    role: "Web3 Security Engineer",
+    image: edgar,
+    bio: "I'm the Lead Web3 Security Engineer at 41swara, where I help development teams design secure protocols through threat modeling and build with confidence through in-depth smart contract audits. I lead end-to-end security across the stack, from smart contracts to web applications and infrastructure. With a strong background in cybersecurity, my focus is on aligning security with development workflows to ensure resilient and secure Web3 systems."
+  },
+  {
+    name: "Jimii",
+    role: "Solana software engineer",
+    image: jimmy,
+    bio: "Solana software engineer @Smithii"
+  },
+  {
+    name: "Vicent Aipoi",
+    role: "Software Engineer",
+    image: vicent,
+    bio: "Experienced Technical Project Manager with over 5 years of expertise in managing complex projects and driving growth through strategic initiatives.Adept at Project Management, Agile Methodologies, and Technical Documentation, with a proven track record in CI/CD Pipelines, Web3, and Blockchain technologies. Skilled in Client Onboarding, Stakeholder Communication, and Business Development. Committed to leveraging data-driven insights to ensure On-time Delivery, optimize Processes, and achieve Sustainable Growth."
+  },
+  {
+    name: "Kalema Edgar",
+    role: "A Solutions Architect",
+    image: edgar,
+    bio: "Kalema Edgar is a seasoned Enterprise & Solutions Architect, a Senior Software Engineer with over 12 years of experience building and integrating complex systems across the Banking, FinTech, and Education sectors. He is the author of More Than A Click, a mentor, blogger, and part-time tutor at ISBAT University and Refactory. He is passionate about Blockchain, AI, Technology in general, an AWS-Certified Cloud professional and Agile practitioner, blending deep technical expertise with Agile leadership to drive innovation and transformation in digital ecosystems. When he's not building systems, he's cheering on Manchester United and the Uganda Cranes. Blog: kalemaedgar.medium.com"
+  },
 ];
 
 // Helper function to trim text
@@ -292,9 +322,9 @@ export default function Speakers() {
                 className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl cursor-pointer"
                 onClick={() => setSelectedSpeaker(speaker)}
               >
-                  <div className="flex justify-center items-center">
+                  <div className=" w-[150px] h-[150px] rounded-full overflow-hidden flex justify-center items-center">
                     <Image
-                      className="rounded-full"
+                      className="w-full h-full object-cover  "
                       src={speaker.image}
                       width={150}
                       height={150}
@@ -329,7 +359,7 @@ export default function Speakers() {
               >
                 <div className="p-6 overflow-y-auto flex-1">
                   <div className="flex flex-col items-center">
-                    <Image className="rounded-full mx-auto" src={selectedSpeaker.image} width={200} height={200} alt={selectedSpeaker.name} />
+                    <Image className="rounded-full mx-auto " src={selectedSpeaker.image} width={200} height={200} alt={selectedSpeaker.name} />
                     <h3 className="text-2xl font-bold mt-4">{selectedSpeaker.name}</h3>
                     <p className="text-gray-600">{selectedSpeaker.role}</p>
                   </div>
