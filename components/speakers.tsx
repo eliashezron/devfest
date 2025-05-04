@@ -250,7 +250,7 @@ const speakers = [
   {
     name: "Moses Mrima Mbanga",
     role: "Web3 Security Engineer",
-    image: edgar,
+    image: moses,
     bio: "I'm the Lead Web3 Security Engineer at 41swara, where I help development teams design secure protocols through threat modeling and build with confidence through in-depth smart contract audits. I lead end-to-end security across the stack, from smart contracts to web applications and infrastructure. With a strong background in cybersecurity, my focus is on aligning security with development workflows to ensure resilient and secure Web3 systems."
   },
   {
