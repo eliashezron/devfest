@@ -261,7 +261,7 @@ const speakers = [
   },
   {
     name: "Vicent Sipoi",
-    role: "Software Engineer",
+    role: "Software Engineer, Founder Adamur",
     image: vicent,
     bio: "Experienced Technical Project Manager with over 5 years of expertise in managing complex projects and driving growth through strategic initiatives.Adept at Project Management, Agile Methodologies, and Technical Documentation, with a proven track record in CI/CD Pipelines, Web3, and Blockchain technologies. Skilled in Client Onboarding, Stakeholder Communication, and Business Development. Committed to leveraging data-driven insights to ensure On-time Delivery, optimize Processes, and achieve Sustainable Growth."
   },
