@@ -11,16 +11,18 @@ import Newsletter from '@/components/newsletter'
 import FAQs from '@/components/FAQS'
 import Sponsors from '@/components/sponsors'
 import Speakers from '@/components/speakers'
-
+import CounterTimer from '@/components/utils/CountdownTimer'
 export default function Home() {
   return (
     <>
       <Hero />
       <Features />
+      <CounterTimer/>
       <Speakers />
       <Testimonials />
       <Sponsors/>
       {/* <Newsletter /> */}
+    
       <FAQs />
     </>
   )
