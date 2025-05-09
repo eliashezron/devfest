@@ -201,6 +201,7 @@ import jimmy from '@/public/images/jimmy.jpg';
 import moses from '@/public/images/moses.jpg';
 import vicent from '@/public/images/vicent.jpg';
 import vianey from '@/public/images/vianey.jpeg';
+import elkanah from '@/public/images/elkana.jpg';
 
 // Speaker Data
 const speakers = [
@@ -271,6 +272,14 @@ const speakers = [
     image: edgar,
     bio: "Kalema Edgar is a seasoned Enterprise & Solutions Architect, a Senior Software Engineer with over 12 years of experience building and integrating complex systems across the Banking, FinTech, and Education sectors. He is the author of More Than A Click, a mentor, blogger, and part-time tutor at ISBAT University and Refactory. He is passionate about Blockchain, AI, Technology in general, an AWS-Certified Cloud professional and Agile practitioner, blending deep technical expertise with Agile leadership to drive innovation and transformation in digital ecosystems. When he's not building systems, he's cheering on Manchester United and the Uganda Cranes. Blog: kalemaedgar.medium.com"
   },
+  {
+    name: "Muchiri Elkanah Kariuki",
+    role: "founder of Jua",
+    image: elkanah,
+    bio: " Elkanah Muchiri Kariuki is the founder of Jua, a peer-to-peer crypto infrastructure platform built for Africa. Jua enables users to trade Bitcoin and stablecoins with over 200 payment methods, starting from as little as $1. Built by developers for developers, Jua provides APIs and SDKs that integrate mobile money, fintech wallets, and local fiat rails into Web3 applications. With a deep focus on interoperability, Muchiri and his team have architected Jua as a programmable layer for digital asset exchange, borderless remittance, and decentralized commerce. He's passionate about merging Web2 with Web3 to power grassroots innovation and financial inclusion across the continent."
+  },
+  
+
 ];
 
 // Helper function to trim text
