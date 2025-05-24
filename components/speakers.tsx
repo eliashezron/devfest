@@ -19,8 +19,8 @@ import moses from '@/public/images/moses.jpg';
 import vicent from '@/public/images/vicent.jpg';
 import vianey from '@/public/images/vianey.jpeg';
 import elkanah from '@/public/images/elkana.jpg';
-import agnes from '@/public/images/Agnes.jpg';
-import kibirige from '@/public/images/kibirige.jpg';
+import agnes from '@/public/images/Agnes.jpeg';
+//import kibirige from '@/public/images/kibirige.jpg';
 
 // Helper function to trim text
 const trimText = (text: string, maxLength: number) => {
@@ -103,16 +103,16 @@ const speakers = [
     image: elkanah,
     bio: " Elkanah Muchiri Kariuki is the founder of Jua, a peer-to-peer crypto infrastructure platform built for Africa. Jua enables users to trade Bitcoin and stablecoins with over 200 payment methods, starting from as little as $1. Built by developers for developers, Jua provides APIs and SDKs that integrate mobile money, fintech wallets, and local fiat rails into Web3 applications. With a deep focus on interoperability, Muchiri and his team have architected Jua as a programmable layer for digital asset exchange, borderless remittance, and decentralized commerce. He's passionate about merging Web2 with Web3 to power grassroots innovation and financial inclusion across the continent."
   },
+  // {
+  //   name: "Jeff-L Kibirige",
+  //   role: "A hunter and passionate artist.",
+  //   image: kibirige,
+  //   bio: "A hunter and passionate artist.",
+  // },
   {
-    name: "Jeff-L Kibirige",
-    role: "A hunter and passionate artist.",
-    image: kibirige,
-    bio: "A hunter and passionate artist.",
-  },
-  {
-    name: "Agnes Freda Namulindwa Lumala",
-    role: "Digital Transformation Leader and ICT Capacity Building Expert",
-    image: kibirige,
+    name: "Agnes Freda Lumala",
+    role: "ICT Capacity Building Expert",
+    image: agnes,
     bio: " Agnes Lumala is a seasoned Digital Transformation Leader and ICT Capacity Building Expert with over 20 years of experience across ICT, banking, and education sectors. She currently serves as the Academic Registrar at Uganda's specialized ICT skilling institution under the Ministry of ICT & NG, where she leads transformative digital initiatives. Agnes has successfully managed large-scale digital skilling programs, supported international development projects, and implemented enterprise systems that drive efficiency and service excellence. A TOGAF-certified enterprise architect and a CDPSE candidate, she applies risk-aware digital strategies and data governance frameworks to ensure compliance and institutional integrity. She holds an MSc in Computer Science and is a member of ISACA and the Association of Enterprise Architects, using her expertise to empower thousands through digital literacy, financial inclusion, and innovation-driven capacity building."
   },
 
