@@ -20,9 +20,9 @@ import vicent from '@/public/images/vicent.jpg';
 import vianey from '@/public/images/vianey.jpeg';
 import elkanah from '@/public/images/elkana.jpg';
 import agnes from '@/public/images/Agnes.jpeg';
-import noela from '@/public/images/noela.jpg';
+import noela from '@/public/images/noela.jpeg';
 import mrisho from '@/public/images/mrisho.jpeg';
-import alex from '@/public/images/Alex.jpg';
+import alex from '@/public/images/alex.jpeg';
 import kizza from '@/public/images/kizza.jpg';
 // Helper function to trim text
 const trimText = (text: string, maxLength: number) => {
