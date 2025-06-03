@@ -20,8 +20,10 @@ import vicent from '@/public/images/vicent.jpg';
 import vianey from '@/public/images/vianey.jpeg';
 import elkanah from '@/public/images/elkana.jpg';
 import agnes from '@/public/images/Agnes.jpeg';
-//import kibirige from '@/public/images/kibirige.jpg';
-
+import noela from '@/public/images/noela.jpg';
+import mrisho from '@/public/images/mrisho.jpeg';
+import alex from '@/public/images/Alex.jpg';
+import kizza from '@/public/images/kizza.jpg';
 // Helper function to trim text
 const trimText = (text: string, maxLength: number) => {
   if (text.length <= maxLength) return text
@@ -114,6 +116,30 @@ const speakers = [
     role: "ICT Capacity Building Expert",
     image: agnes,
     bio: " Agnes Lumala is a seasoned Digital Transformation Leader and ICT Capacity Building Expert with over 20 years of experience across ICT, banking, and education sectors. She currently serves as the Academic Registrar at Uganda's specialized ICT skilling institution under the Ministry of ICT & NG, where she leads transformative digital initiatives. Agnes has successfully managed large-scale digital skilling programs, supported international development projects, and implemented enterprise systems that drive efficiency and service excellence. A TOGAF-certified enterprise architect and a CDPSE candidate, she applies risk-aware digital strategies and data governance frameworks to ensure compliance and institutional integrity. She holds an MSc in Computer Science and is a member of ISACA and the Association of Enterprise Architects, using her expertise to empower thousands through digital literacy, financial inclusion, and innovation-driven capacity building."
+  },
+  {
+    name: "Jemima Noela",
+    role: "Smart contract engineer, data researcher",
+    image: noela,
+    bio: "Smart contract engineer, data researcher"
+  },
+  {
+    name: "Mrisho Lukamba",
+    role: "Blockchain protocol enginner",
+    image: mrisho,
+    bio: " Blockchain protocol enginner having 4 years of experience working in web3 and a math undergraduate "
+  },
+  {
+    name: "Alex Mula",
+    role: "Software Engineer",
+    image: alex,
+    bio: "A software engineer with 5 years of experience building systems across diverse industries. My focus has been on developing web and backend applications, particularly in the Web3 and fintech sectors. Currently, I’m part of the team at MusaPay, a fintech company providing innovative payment solutions. With the expertise I've gained, I’m now exploring how blockchain technology can seamlessly integrate with traditional systems—emphasizing smooth onboarding and zero added costs."
+  },
+  {
+    name: "Kizza Fredrich",
+    role: "Cofounder doxa a multistablecoin plartform with DUSD.",
+    image: kizza,
+    bio: "Fredrich is an AI, blockchain and crypto geek with over 5 years in the industry"
   },
 
 ];
