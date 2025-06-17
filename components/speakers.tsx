@@ -24,10 +24,11 @@ import noela from '@/public/images/noela.jpeg';
 import mrisho from '@/public/images/mrisho.jpeg';
 import alex from '@/public/images/alex.jpeg';
 import kizza from '@/public/images/kizza.jpg';
-import danny from '@/public/images/danny.jpg';
-import bratipah from '@/public/images/bratipah.jpg';
+import danny from '@/public/images/Danny.jpeg';
+import kioko from '@/public/images/kioko.jpg';
 import joan from '@/public/images/joan.jpg';
-import louis from '@/public/images/louis.jpg';
+import louis from '@/public/images/louis.jpeg';
+import Angella from '@/public/images/Angellina.jpeg';
 // Helper function to trim text
 const trimText = (text: string, maxLength: number) => {
   if (text.length <= maxLength) return text
@@ -72,6 +73,12 @@ const speakers = [
     role: "Founder swiftramp",
     image: Bbosa,
     bio: "Software engineer building swiftramp, an on/off-ramp and cross border payment platform leveraging blockchain"
+  },
+    {
+    name: "Angella Mulikatete",
+    role: "Software Engineer",
+    image: Angella,
+    bio: "Software engineer and smart Contract Engineer "
   },
   {
     name: "Kakooza Vianey",
@@ -154,7 +161,7 @@ const speakers = [
   {
     name: "Bratipah Kioko",
     role: "Lisk Ambassador",
-    image: bratipah,
+    image: kioko,
     bio: "Bratipah embodies a profound commitment to a vision where Africa is at the forefront of technological innovation especially in Blockchain web3 development. With an experience of 4years in Blockchain she leads Kenya as the Lisk Ambassador & Women in Blockchain East Africa Lead. Bratipah's goal  aligns with Lisk focus in the emerging market to inspire, educate, and support builders and founders  who aspire to delve into the web3 ecosystem by providing  resources, training, and mentorship in the developer relation capacity. As a woman in web3 she is celebrated in bridging the gap for women builders in the space "
   },
   {
