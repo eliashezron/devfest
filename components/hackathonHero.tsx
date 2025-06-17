@@ -50,7 +50,7 @@ const HackathonHero = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in animation-delay-1500">
 
-          <Link href="https://blockchain-devfest-kampala-hackathon.devfolio.co/overview" passHref target="_blank" rel="noopener noreferrer"
+          <Link href="https://blockchain-devfest-kampala-hackathon.devfolio.co/overview" 
                  className="bg-white text-purple-700 hover:bg-gray-100 hover:scale-105 transition-all duration-200 font-bold px-8 py-3">
                   SPONSOR
           </Link>
