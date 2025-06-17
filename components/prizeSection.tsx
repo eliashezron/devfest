@@ -50,7 +50,7 @@ const PrizesSection = () => {
             Amazing Prizes Await
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Compete for over $10,000 in prizes and recognition from industry leaders.
+            Compete for  $3,000 in prizes and recognition from industry leaders.
           </p>
         </div>
         
