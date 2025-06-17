@@ -4,37 +4,37 @@ import { Clock, Code, Presentation, Trophy } from "lucide-react";
 
 const timelineEvents = [
   {
-    time: "Day 1 - 6:00 PM",
-    title: "Opening Ceremony & Team Formation",
+    time: "23rd June - 25th June : Online",
+    title: "Opening Ceremony , Team Formation and Hackathon Begins",
     description: "Welcome reception, problem statements revealed, and team formation",
     icon: Clock,
     color: "bg-blue-500"
   },
+  // {
+  //   time: "Day 1 - 8:00 PM",
+  //   title: "Hacking Begins",
+  //   description: "48 hours of intensive coding, building, and creating begins",
+  //   icon: Code,
+  //   color: "bg-green-500"
+  // },
   {
-    time: "Day 1 - 8:00 PM",
-    title: "Hacking Begins",
-    description: "48 hours of intensive coding, building, and creating begins",
-    icon: Code,
-    color: "bg-green-500"
+    time: "26th June - 8:00 AM - 5 :00 PM",
+    title: " Presentations",
+    description: "Mentorship from different expertise in the Blockchain",
+    icon: Presentation,
+    color: "bg-red-500"
   },
   {
-    time: "Day 2 - All Day",
-    title: "Mentorship & Workshops",
-    description: "Expert mentors available, technical workshops, and networking sessions",
-    icon: Clock,
-    color: "bg-purple-500"
-  },
-  {
-    time: "Day 3 - 2:00 PM",
+    time: "27th June - 8:00 AM - 5 :00 PM",
     title: "Final Presentations",
     description: "Teams present their solutions to expert judges",
     icon: Presentation,
     color: "bg-red-500"
   },
   {
-    time: "Day 3 - 6:00 PM",
+    time: "28th June ",
     title: "Awards Ceremony",
-    description: "Winners announced and prizes distributed",
+    description: "Winners announced on the main conference day",
     icon: Trophy,
     color: "bg-yellow-500"
   }
@@ -52,7 +52,7 @@ const HackathonTimeline = () => {
             Hackathon Timeline
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Three days of intense coding, learning, and innovation. Here's what to expect.
+            Five days of intense coding, learning, and innovation. Here's what to expect.
           </p>
         </div>
         

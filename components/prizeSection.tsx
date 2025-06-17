@@ -6,27 +6,27 @@ import { Trophy, Award, Gift, Star } from "lucide-react";
 const prizes = [
   {
     place: "1st Place",
-    amount: "$5,000",
+    amount: "$500",
     title: "Grand Prize Winner",
-    description: "Cash prize, mentorship program, and startup incubation opportunity",
+    //description: "Cash prize, mentorship program, and startup incubation opportunity",
     icon: Trophy,
     gradient: "bg-gradient-to-br from-yellow-400 to-orange-500",
     textColor: "text-yellow-600"
   },
   {
     place: "2nd Place",
-    amount: "$3,000",
+    amount: "$300",
     title: "Runner Up",
-    description: "Cash prize and 6 months of free cloud hosting credits",
+    //description: "Cash prize and 6 months of free cloud hosting credits",
     icon: Award,
     gradient: "bg-gradient-to-br from-gray-300 to-gray-500",
     textColor: "text-gray-600"
   },
   {
     place: "3rd Place",
-    amount: "$2,000",
+    amount: "$200",
     title: "Third Place",
-    description: "Cash prize and premium development tool subscriptions",
+    //description: "Cash prize and premium development tool subscriptions",
     icon: Gift,
     gradient: "bg-gradient-to-br from-orange-400 to-red-500",
     textColor: "text-orange-600"
@@ -34,10 +34,8 @@ const prizes = [
 ];
 
 const specialPrizes = [
-  "Best Use of AI/ML - $1,000",
-  "Most Innovative Solution - $1,000", 
-  "Best Mobile App - $800",
-  "People's Choice Award - $500"
+  "Every Hacker  - $1,000",
+  "Base Bounty - $1,000", 
 ];
 
 const PrizesSection = () => {
@@ -73,11 +71,11 @@ const PrizesSection = () => {
                   {prize.title}
                 </h3>
               </CardHeader>
-              <CardContent>
+              {/* <CardContent>
                 <p className="text-gray-600">
                   {prize.description}
                 </p>
-              </CardContent>
+              </CardContent> */}
             </Card>
           ))}
         </div>
