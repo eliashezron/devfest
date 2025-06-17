@@ -24,6 +24,10 @@ import noela from '@/public/images/noela.jpeg';
 import mrisho from '@/public/images/mrisho.jpeg';
 import alex from '@/public/images/alex.jpeg';
 import kizza from '@/public/images/kizza.jpg';
+import danny from '@/public/images/danny.jpg';
+import bratipah from '@/public/images/bratipah.jpg';
+import joan from '@/public/images/joan.jpg';
+import louis from '@/public/images/louis.jpg';
 // Helper function to trim text
 const trimText = (text: string, maxLength: number) => {
   if (text.length <= maxLength) return text
@@ -141,6 +145,30 @@ const speakers = [
     image: kizza,
     bio: "Fredrich is an AI, blockchain and crypto geek with over 5 years in the industry"
   },
+  {
+    name: "Danny Thomx",
+    role: "Software Developer",
+    image: danny,
+    bio: "Self-taught developer turned blockchain builder turned entrepreneur and frontier-tech explorer."
+  },
+  {
+    name: "Bratipah Kioko",
+    role: "Lisk Ambassador",
+    image: bratipah,
+    bio: "Bratipah embodies a profound commitment to a vision where Africa is at the forefront of technological innovation especially in Blockchain web3 development. With an experience of 4years in Blockchain she leads Kenya as the Lisk Ambassador & Women in Blockchain East Africa Lead. Bratipah's goal  aligns with Lisk focus in the emerging market to inspire, educate, and support builders and founders  who aspire to delve into the web3 ecosystem by providing  resources, training, and mentorship in the developer relation capacity. As a woman in web3 she is celebrated in bridging the gap for women builders in the space "
+  },
+  {
+    name: "Joan Jerop",
+    role: "Founder & Executive Director One Dev",
+    image: joan,
+    bio: "Founder & Executive Director One Dev and Host of Code Africa Conference and Ethsafari"
+  },
+  {
+    name: "Louis N Kizito",
+    role: "Partner Petangon Advocates",
+    image: louis,
+    bio: "Partner Petangon Advocates"
+  }
 
 ];
 
