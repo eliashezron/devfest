@@ -4,7 +4,7 @@ import { Clock, Code, Presentation, Trophy } from "lucide-react";
 
 const timelineEvents = [
   {
-    time: "23rd June - 25th June : Online",
+    time: "23rd June - 26th June : Online",
     title: "Opening Ceremony , Team Formation and Hackathon Begins",
     description: "Welcome reception, problem statements revealed, and team formation",
     icon: Clock,
@@ -17,17 +17,17 @@ const timelineEvents = [
   //   icon: Code,
   //   color: "bg-green-500"
   // },
-  {
-    time: "26th June - 8:00 AM - 5 :00 PM",
-    title: " Presentations",
-    description: "Mentorship from different expertise in the Blockchain",
-    icon: Presentation,
-    color: "bg-red-500"
-  },
+  // {
+  //   time: "26th June - 8",
+  //   title: " Presentations",
+  //   description: "Mentorship from different expertise in the Blockchain",
+  //   icon: Presentation,
+  //   color: "bg-red-500"
+  // },
   {
     time: "27th June - 8:00 AM - 5 :00 PM",
     title: "Final Presentations",
-    description: "Teams present their solutions to expert judges",
+    description: "Mentorship from different expertise in the Blockchain,Teams present their solutions to expert judges",
     icon: Presentation,
     color: "bg-red-500"
   },

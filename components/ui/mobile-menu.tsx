@@ -75,7 +75,7 @@ export default function MobileMenu() {
                 </svg>
               </Link>
             </li>
-          </ul>          
+          </ul>
         </Transition>
       </div>
     </div>
