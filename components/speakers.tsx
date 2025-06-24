@@ -30,7 +30,7 @@ import joan from '@/public/images/joan.jpg';
 import louis from '@/public/images/louis.jpeg';
 import Angella from '@/public/images/Angellina.jpeg';
 import Brisa from '@/public/images/Brisa.jpeg';
-import valentine from '@/public/images/valentine.jpg';
+import valentine from '@/public/images/Valentine.jpg';
 // Helper function to trim text
 const trimText = (text: string, maxLength: number) => {
   if (text.length <= maxLength) return text
