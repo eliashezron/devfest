@@ -23,7 +23,7 @@ import agnes from '@/public/images/Agnes.jpeg';
 import noela from '@/public/images/noela.jpeg';
 import mrisho from '@/public/images/mrisho.jpeg';
 import alex from '@/public/images/alex.jpeg';
-import kizza from '@/public/images/kizza.jpg';
+import kizza from '@/public/images/fredrick.jpeg';
 import danny from '@/public/images/Danny.jpeg';
 import kioko from '@/public/images/kioko.jpg';
 import joan from '@/public/images/joan.jpg';
