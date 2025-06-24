@@ -26,7 +26,7 @@ const HackathonHero = () => {
         </h1>
         
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in animation-delay-500">
-          Join Uganda's biggest developer hackathon. 1 week to build the future with cutting-edge technology and amazing prizes.
+          Join Uganda's biggest developer hackathon. 5 days to build the future with cutting-edge technology and amazing prizes.
         </p>
         
         <div className="flex flex-wrap justify-center gap-6 mb-12 animate-fade-in animation-delay-1000">
@@ -48,16 +48,6 @@ const HackathonHero = () => {
           </div>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in animation-delay-1500">
-
-          <Link href="https://blockchain-devfest-kampala-hackathon.devfolio.co/overview" 
-                 className="bg-white text-purple-700 hover:bg-gray-100 hover:scale-105 transition-all duration-200 font-bold px-8 py-3">
-                  SPONSOR
-          </Link>
-          {/* <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-purple-700 hover:scale-105 transition-all duration-200 font-bold px-8 py-3">
-            Learn More
-          </Button> */}
-        </div>
       </div>
     </section>
   );

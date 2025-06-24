@@ -1,4 +1,3 @@
-
 import HackathonHero from '@/components/hackathonHero'
 import HackathonTimeline from '@/components/hackathonTimeline'
 import PrizesSection from '@/components/prizeSection'
@@ -17,5 +16,3 @@ const Page = () => {
 }
 
 export default Page
-
-

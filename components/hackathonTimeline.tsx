@@ -7,6 +7,7 @@ const timelineEvents = [
     time: "23rd June - 26th June : Online",
     title: "Opening Ceremony , Team Formation and Hackathon Begins",
     description: "Welcome reception, problem statements revealed, and team formation",
+    location: "Online",
     icon: Clock,
     color: "bg-blue-500"
   },
@@ -29,6 +30,7 @@ const timelineEvents = [
     title: "Final Presentations",
     description: "Mentorship from different expertise in the Blockchain,Teams present their solutions to expert judges",
     icon: Presentation,
+    location: "National Innovation Hub Nakawa",
     color: "bg-red-500"
   },
   {
@@ -36,6 +38,7 @@ const timelineEvents = [
     title: "Awards Ceremony",
     description: "Winners announced on the main conference day",
     icon: Trophy,
+    location: "MoTiv Bugolobi",
     color: "bg-yellow-500"
   }
 ];
@@ -78,6 +81,7 @@ const HackathonTimeline = () => {
                         </Badge>
                       </div>
                       <p className="text-gray-600">{event.description}</p>
+                      <p className="text-gray-900 pt-2">Location: {event.location}</p>
                     </div>
                   </div>
                 </CardContent>
