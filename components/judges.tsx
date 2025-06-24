@@ -17,6 +17,7 @@ import vianey from '@/public/images/vianey.jpeg';
 import Angella from '@/public/images/Angellina.jpeg';
 import solene from '@/public/images/solene.jpeg';
 import osiyomeoh from '@/public/images/osiyomeoh.jpeg';
+import okot from '../public/images/josh.jpeg';
 
 // Helper function to trim text
 const trimText = (text: string, maxLength: number) => {
@@ -52,7 +53,7 @@ const speakers = [
   },
   {
     name: "Jovan Mwesigwa",
-    role: "Co-Founder Oneramp & Shukuru Wallet",
+    role: "Co-Founder Oneramp",
     image: jovan,
     bio: "Jovan is a blockchain developer and advocate, working on innovative solutions in Web3 and digital asset management."
   },
@@ -73,6 +74,12 @@ const speakers = [
     role: "Founder Decentracode",
     image: vianey,
     bio: "Software engineer building at Decentracode"
+  },
+    {
+    name: "Okot Joshua",
+    role: " Co-founder of Kakebe Technologies",
+    image: okot,
+    bio: "Okot Joshua is a passionate Ugandan innovator, entrepreneur, and youth mentor,a youth-led tech company based in Lira City, Northern Uganda. Through Kakebe, Joshua has empowered hundreds of young people with practical skills in robotics, software development, digital innovation, and entrepreneurship. He serves as a Technovation Ambassador, representing a global nonprofit that equips girls and underserved youth with the skills to become tech entrepreneurs and leaders. Through Technovation, Joshua mentors young innovators to solve real-world problems in their communities using technology and entrepreneurship—particularly encouraging girls to pursue STEM and leadership paths. With a strong belief in grassroots transformation, he has championed partnerships with institutions like Lira University to bridge the gap between academic learning and real-world problem-solving. Under his leadership, Kakebe has launched impactful programs such as Tech Camps, ICT training, and entrepreneurship support that foster job creation and mindset change across Northern Uganda.Joshua is also an inspiring public speaker, mentor, and advocate for youth-led innovation and economic empowerment. His vision is to nurture a generation of purpose-driven African tech leaders who create local solutions with global impact."
   }
 ];
 

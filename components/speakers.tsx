@@ -29,6 +29,8 @@ import kioko from '@/public/images/kioko.jpg';
 import joan from '@/public/images/joan.jpg';
 import louis from '@/public/images/louis.jpeg';
 import Angella from '@/public/images/Angellina.jpeg';
+import Brisa from '@/public/images/Brisa.jpeg';
+import valentine from '@/public/images/valentine.jpg';
 // Helper function to trim text
 const trimText = (text: string, maxLength: number) => {
   if (text.length <= maxLength) return text
@@ -116,12 +118,12 @@ const speakers = [
     image: elkanah,
     bio: " Elkanah Muchiri Kariuki is the founder of Jua, a peer-to-peer crypto infrastructure platform built for Africa. Jua enables users to trade Bitcoin and stablecoins with over 200 payment methods, starting from as little as $1. Built by developers for developers, Jua provides APIs and SDKs that integrate mobile money, fintech wallets, and local fiat rails into Web3 applications. With a deep focus on interoperability, Muchiri and his team have architected Jua as a programmable layer for digital asset exchange, borderless remittance, and decentralized commerce. He's passionate about merging Web2 with Web3 to power grassroots innovation and financial inclusion across the continent."
   },
-  // {
-  //   name: "Jeff-L Kibirige",
-  //   role: "A hunter and passionate artist.",
-  //   image: kibirige,
-  //   bio: "A hunter and passionate artist.",
-  // },
+  {
+    name: "Valentine Masicha W.",
+    role: "EdTech founder",
+    image: valentine,
+    bio: "Valentine Masicha Wafula is an EdTech founder, AI automation strategist, and regional coordinator for global tech initiatives like Technovation and the World Robot Olympiad in Uganda. Passionate about bridging the digital divide, she empowers African youth and entrepreneurs with practical AI, robotics, and automation skills. Valentine is the founder of Mindset Coders and JaliAI, helping businesses simplify operations using AI — without hiring large tech teams. She’s on a mission to make technology accessible, inclusive, and impactful across Africa.",
+  },
   {
     name: "Agnes Freda Lumala",
     role: "ICT Capacity Building Expert",
@@ -148,9 +150,9 @@ const speakers = [
   },
   {
     name: "Kizza Fredrich",
-    role: "Cofounder doxa a multistablecoin plartform with DUSD.",
+    role: "Cofounder doxa ",
     image: kizza,
-    bio: "Fredrich is an AI, blockchain and crypto geek with over 5 years in the industry"
+    bio: "Fredrich is a Cofounder doxa a multistablecoin platform with DUSD , he is an AI, blockchain and crypto geek with over 5 years in the industry"
   },
   {
     name: "Danny Thomx",
@@ -175,7 +177,13 @@ const speakers = [
     role: "Partner Petangon Advocates",
     image: louis,
     bio: "Partner Petangon Advocates"
-  }
+  },
+    {
+    name: "Mukunde Brisa",
+    role: "Strategy & Ecosystem Growth",
+    image: Brisa,
+    bio: "Strategy & Ecosystem Growth"
+  },
 
 ];
 
