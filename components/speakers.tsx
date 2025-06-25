@@ -31,6 +31,7 @@ import louis from '@/public/images/louis.jpeg';
 import Angella from '@/public/images/Angellina.jpeg';
 import Brisa from '@/public/images/Brisa.jpeg';
 import valentine from '@/public/images/Valentine.jpg';
+import dalmas from '@/public/images/dalmas.jpg';
 // Helper function to trim text
 const trimText = (text: string, maxLength: number) => {
   if (text.length <= maxLength) return text
@@ -107,6 +108,12 @@ const speakers = [
     bio: "Experienced Technical Project Manager with over 5 years of expertise in managing complex projects and driving growth through strategic initiatives.Adept at Project Management, Agile Methodologies, and Technical Documentation, with a proven track record in CI/CD Pipelines, Web3, and Blockchain technologies. Skilled in Client Onboarding, Stakeholder Communication, and Business Development. Committed to leveraging data-driven insights to ensure On-time Delivery, optimize Processes, and achieve Sustainable Growth."
   },
   {
+    name: "Valentine Masicha W.",
+    role: "EdTech founder",
+    image: valentine,
+    bio: "Valentine Masicha Wafula is an EdTech founder, AI automation strategist, and regional coordinator for global tech initiatives like Technovation and the World Robot Olympiad in Uganda. Passionate about bridging the digital divide, she empowers African youth and entrepreneurs with practical AI, robotics, and automation skills. Valentine is the founder of Mindset Coders and JaliAI, helping businesses simplify operations using AI — without hiring large tech teams. She’s on a mission to make technology accessible, inclusive, and impactful across Africa.",
+  },
+  {
     name: "Kalema Edgar",
     role: "A Solutions Architect",
     image: edgar,
@@ -117,12 +124,6 @@ const speakers = [
     role: "founder of Jua",
     image: elkanah,
     bio: " Elkanah Muchiri Kariuki is the founder of Jua, a peer-to-peer crypto infrastructure platform built for Africa. Jua enables users to trade Bitcoin and stablecoins with over 200 payment methods, starting from as little as $1. Built by developers for developers, Jua provides APIs and SDKs that integrate mobile money, fintech wallets, and local fiat rails into Web3 applications. With a deep focus on interoperability, Muchiri and his team have architected Jua as a programmable layer for digital asset exchange, borderless remittance, and decentralized commerce. He's passionate about merging Web2 with Web3 to power grassroots innovation and financial inclusion across the continent."
-  },
-  {
-    name: "Valentine Masicha W.",
-    role: "EdTech founder",
-    image: valentine,
-    bio: "Valentine Masicha Wafula is an EdTech founder, AI automation strategist, and regional coordinator for global tech initiatives like Technovation and the World Robot Olympiad in Uganda. Passionate about bridging the digital divide, she empowers African youth and entrepreneurs with practical AI, robotics, and automation skills. Valentine is the founder of Mindset Coders and JaliAI, helping businesses simplify operations using AI — without hiring large tech teams. She’s on a mission to make technology accessible, inclusive, and impactful across Africa.",
   },
   {
     name: "Agnes Freda Lumala",
@@ -148,12 +149,7 @@ const speakers = [
     image: alex,
     bio: "A software engineer with 5 years of experience building systems across diverse industries. My focus has been on developing web and backend applications, particularly in the Web3 and fintech sectors. Currently, I’m part of the team at MusaPay, a fintech company providing innovative payment solutions. With the expertise I've gained, I’m now exploring how blockchain technology can seamlessly integrate with traditional systems—emphasizing smooth onboarding and zero added costs."
   },
-  {
-    name: "Kizza Fredrich",
-    role: "Cofounder doxa ",
-    image: kizza,
-    bio: "Fredrich is a Cofounder doxa a multistablecoin platform with DUSD , he is an AI, blockchain and crypto geek with over 5 years in the industry"
-  },
+
   {
     name: "Danny Thomx",
     role: "Software Developer",
@@ -173,6 +169,12 @@ const speakers = [
     bio: "Founder & Executive Director One Dev and Host of Code Africa Conference and Ethsafari"
   },
   {
+    name: "Dalmas Ogembo",
+    role: "Fullstack blockchain developer",
+    image: dalmas,
+    bio: "Fullstack blockchain developer",
+  },
+  {
     name: "Louis N Kizito",
     role: "Partner Petangon Advocates",
     image: louis,
@@ -183,6 +185,12 @@ const speakers = [
     role: "Strategy & Ecosystem Growth",
     image: Brisa,
     bio: "Strategy & Ecosystem Growth"
+  },
+  {
+    name: "Kizza Fredrich",
+    role: "Cofounder doxa ",
+    image: kizza,
+    bio: "Fredrich is a Cofounder doxa a multistablecoin platform with DUSD , he is an AI, blockchain and crypto geek with over 5 years in the industry"
   },
 
 ];
