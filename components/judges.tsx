@@ -18,6 +18,8 @@ import Angella from '@/public/images/Angellina.jpeg';
 import solene from '@/public/images/solene.jpeg';
 import osiyomeoh from '@/public/images/osiyomeoh.jpeg';
 import okot from '../public/images/josh.jpeg';
+import michael from '../public/images/michael.jpeg';
+
 
 // Helper function to trim text
 const trimText = (text: string, maxLength: number) => {
@@ -38,6 +40,12 @@ const speakers = [
         role: "Founder of DevCasta",
         image: osiyomeoh,
         bio: "Samuel Aleonomoh is a software engineer, blockchain enthusiast, and the founder of DevCasta, a platform that bridges learning with real-world application. With over five years of experience in software development and a deep passion for decentralized technologies, Samuel is also a blockchain engineer, actively writing smart contracts and building decentralized applications (dApps). He created DevCasta to help individuals develop practical skills and gain hands-on experience through real-world projects. Samuel is committed to empowering the next generation of tech talent and driving innovation through education and technology."
+    },
+    {
+        name: "Michael Nwachukwu",
+        role: "Co-Founder, Coinsafe",
+        image: michael,
+        bio: "Architect | Smart Contract Engineer "
     },
   {
     name: "David Lumala",
