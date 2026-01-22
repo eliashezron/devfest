@@ -2,7 +2,6 @@ import './css/style.css'
 
 import { Inter } from 'next/font/google'
 
-import Header from '@/components/ui/header'
 import Banner from '@/components/banner'
 
 const inter = Inter({
@@ -12,8 +11,8 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'BLOCKCHAIN DEVFEST KAMPALA 2024',
-  description: 'embracing the future of blockchain technology in Africa',
+  title: 'DevFest Kampala - Africa\'s Premier Developer Conference',
+  description: 'DevFest provides a platform that showcases developers and founding teams, upskills community managers, and provides investors with industry insights. Connect Africa\'s thriving developer ecosystem with global blockchain companies.',
 }
 
 export default function RootLayout({
@@ -25,7 +24,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} font-inter antialiased bg-white text-gray-900 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
-          <Header />
           {children}
           <Banner />
         </div>

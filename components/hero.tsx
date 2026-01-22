@@ -78,7 +78,7 @@ export default function Hero() {
         </div>
 
         {/* Video Section */}
-        <div className="mt-16 max-w-4xl w-full" data-aos="fade-up" data-aos-delay="600">
+        <div className="mt-30 max-w-4xl w-full" data-aos="fade-up" data-aos-delay="600">
           <ModalVideo
             thumb={VideoThumb}
             thumbWidth={768}

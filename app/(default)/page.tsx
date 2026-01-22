@@ -1,29 +1,39 @@
 export const metadata = {
-  title: 'Devfest Kampala',
-  description: `Embrace the blockchain revolution. Empowering Developers, Igniting Innovation, and Building Solutions for Africa's Future.`,
+  title: 'DevFest Kampala - Africa\'s Premier Developer Conference',
+  description: `DevFest provides a platform that showcases developers and founding teams, upskills community managers, and provides investors with industry insights. Connect Africa's thriving developer ecosystem with global blockchain companies.`,
 }
 
-import Hero from '@/components/hero'
-import Features from '@/components/features'
-import FeaturesBlocks from '@/components/speakers'
-import Testimonials from '@/components/testimonials'
-import Newsletter from '@/components/newsletter'
-import FAQs from '@/components/FAQS'
-import Sponsors from '@/components/sponsors'
-import Speakers from '@/components/speakers'
-import CounterTimer from '@/components/utils/CountdownTimer'
+import HeroW3Node from '@/components/hero-w3node'
+import VideoSection from '@/components/video-section'
+import AboutW3Node from '@/components/about-w3node'
+import CountdownSection from '@/components/countdown-section'
+import NodeEngine from '@/components/node-engine'
+import VisitCapeTown from '@/components/visit-cape-town'
+import SponsorshipW3Node from '@/components/sponsorship-w3node'
+import CommunityW3Node from '@/components/community-w3node'
+import StatsW3Node from '@/components/stats-w3node'
+import SpeakersW3Node from '@/components/speakers-w3node'
+import GallerySection from '@/components/gallery-section'
+import SponsorsFAQSection from '@/components/sponsors-faq-section'
+import RegistrationW3Node from '@/components/registration-w3node'
+import FAQW3Node from '@/components/faq-w3node'
+
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Features />
-      <CounterTimer/>
-      <Speakers />
-      <Testimonials />
-      <Sponsors/>
-      {/* <Newsletter /> */}
-    
-      <FAQs />
+      <HeroW3Node />
+      <VideoSection />
+      <AboutW3Node />
+      <CountdownSection />
+      {/* <NodeEngine /> */}
+      {/* <VisitCapeTown /> */}
+      <SponsorshipW3Node />
+      <CommunityW3Node />
+      <StatsW3Node />
+      <SpeakersW3Node />
+      <GallerySection />
+      <SponsorsFAQSection />
+      {/* <FAQW3Node /> */}
     </>
   )
 }
