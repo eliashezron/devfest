@@ -19,6 +19,7 @@ import pf from '@/public/images/pf.jpg'
 import muda from '@/public/images/muda.png'
 import pago from '@/public/images/pago.png'
 import oneramp from '@/public/images/oneramp.png'
+import ambCrypto from '@/public/images/ambLogo.png'
 
 
 const sponsors = [
@@ -33,6 +34,7 @@ const sponsors = [
   { src: muda, alt: 'muda', href: 'https://muda.tech/' },
   { src: fonbnk, alt: 'fonbnk', href: 'https://fonbnk.com/' },
   { src: pago, alt: 'pago', href: 'https://pago.capital/' },
+  {src: ambCrypto, alt: 'ambCrypto', href: 'https://ambcrypto.com/'}
 ];
 
 const Sponsors = () => {

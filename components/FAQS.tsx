@@ -23,7 +23,7 @@ const FAQs = () => {
       answer:
         (
           <p>
-            To apply as a hacker, you need to fill out the <Link href="https://lu.ma/veliqhyg" className="text-blue-600 hover:underline">form</Link> with your personal information, experience, and interests.
+            To apply as a hacker, you need to fill out the <Link href="https://app.unlock-protocol.com/event/block-chain-devfest-hackathon-2" className="text-blue-600 hover:underline">form</Link> with your personal information, experience, and interests.
           </p>
         )
     },

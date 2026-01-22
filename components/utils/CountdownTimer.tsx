@@ -13,7 +13,7 @@ const getTimeRemaining = (targetDate: Date) => {
 };
 
 export default function CountDownTimer() {
-  const targetDate = new Date('2025-07-27T09:00:00'); // DevFest Kampala 2025
+  const targetDate = new Date('2025-06-27T09:00:00'); // DevFest Kampala 2025
   const [timeLeft, setTimeLeft] = useState(getTimeRemaining(targetDate));
 
   useEffect(() => {
