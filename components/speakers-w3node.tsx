@@ -137,7 +137,7 @@ export default function SpeakersW3Node() {
 
   return (
     <>
-      <section id="speakers" className="relative py-20 md:py-32 bg-gray-900 text-white overflow-hidden">
+      <section id="speakers" className="relative py-20 md:py-32 bg-blue-950 text-white overflow-hidden">
         {/* Diagonal grid pattern background */}
         <div 
           className="absolute inset-0 opacity-10"
@@ -167,7 +167,7 @@ export default function SpeakersW3Node() {
               }}
             >
               <span className="uppercase text-sm md:text-base">APPLY TO BE A SPEAKER</span>
-              <span className="ml-4 w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="ml-4 w-6 h-6 bg-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 15l7-7 7 7" />
                 </svg>
@@ -221,7 +221,7 @@ export default function SpeakersW3Node() {
                     data-aos-delay={(index % speakers.length) * 50}
                   >
                     {/* Square Profile Image */}
-                    <div className="relative w-52 h-52 md:w-60 md:h-60 lg:w-72 lg:h-72 bg-gray-800 rounded-lg mb-4 mx-auto overflow-hidden border-2 border-gray-700 group-hover:border-orange-500 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-orange-500/20">
+                    <div className="relative w-52 h-52 md:w-60 md:h-60 lg:w-72 lg:h-72 bg-gray-800 rounded-lg mb-4 mx-auto overflow-hidden border-2 border-gray-700 group-hover:border-orange-500 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-blue-700/20">
                       <Image
                         src={speaker.image}
                         alt={speaker.name}

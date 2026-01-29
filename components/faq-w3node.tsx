@@ -30,12 +30,12 @@ export default function FAQW3Node() {
   };
 
   return (
-    <section id="faq" className="relative w-full bg-black text-white overflow-hidden">
+    <section id="faq" className="relative w-full bg-blue-950 text-white overflow-hidden">
       {/* Top Section - Photographic Scene */}
       
 
       {/* Bottom Section - FAQ */}
-      <div className="relative py-20 md:py-32 bg-black">
+      <div className="relative py-20 md:py-32 bg-blue-950">
         {/* Diagonal grid pattern background */}
         <div 
           className="absolute inset-0 opacity-10"

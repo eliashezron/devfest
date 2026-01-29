@@ -48,7 +48,7 @@ export default function CountdownSection() {
   );
 
   return (
-    <section className="relative py-16 md:py-24 bg-black text-white overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-blue-950 text-white overflow-hidden">
       {/* Diagonal grid pattern background */}
       <div 
         className="absolute inset-0 opacity-10"
@@ -63,7 +63,7 @@ export default function CountdownSection() {
         {/* Header */}
         <div className="max-w-8xl mx-auto text-center pb-12 md:pb-16" data-aos="fade-up">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Countdown to <span className="text-orange-500">DevFest Kampala 2026</span>
+            Countdown to <span className="text-blue-700">DevFest Kampala 2026</span>
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-300">
             Experience tech, community, innovation and more. Don't miss it!
@@ -99,7 +99,7 @@ export default function CountdownSection() {
             {timeBox('Seconds', timeLeft.seconds)}
           </div>
         ) : (
-          <div className="text-center text-3xl sm:text-4xl font-bold text-orange-500 mt-8 animate-bounce">
+          <div className="text-center text-3xl sm:text-4xl font-bold text-blue-700 mt-8 animate-bounce">
             🎉 The event has started!
           </div>
         )}

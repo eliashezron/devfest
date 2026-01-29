@@ -2,7 +2,7 @@
 
 export default function CommunityW3Node() {
   return (
-    <section id="community" className="relative py-8 md:py-12 bg-orange-500 text-white overflow-hidden">
+    <section id="community" className="relative py-8 md:py-12 bg-blue-700 text-white overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Header Section */}
         <div className="relative mb-6">
@@ -40,7 +40,7 @@ export default function CommunityW3Node() {
               }}
               data-aos="fade-left"
             >
-              DEVFEST 2026
+              DEVFEST 5.0 2026
             </div>
           </div>
         </div>

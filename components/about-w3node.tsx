@@ -34,7 +34,7 @@ export default function AboutW3Node() {
   }, [features.length]);
 
   return (
-    <section id="about" className="relative py-20 md:py-32 bg-black text-white overflow-hidden">
+    <section id="about" className="relative py-20 md:py-32 bg-blue-950 text-white overflow-hidden">
       {/* Diagonal grid pattern background */}
       <div 
         className="absolute inset-0 opacity-10"
@@ -59,7 +59,7 @@ export default function AboutW3Node() {
               //ABOUT
             </div>
             
-            {/* Right: DEVFEST rotated 90 degrees */}
+            {/* Right: DEVFEST 5.0 rotated 90 degrees */}
             <div 
               className="text-sm md:text-base text-white font-mono"
               style={{ 
@@ -69,7 +69,7 @@ export default function AboutW3Node() {
               }}
               data-aos="fade-left"
             >
-              DEVFEST
+              DEVFEST 5.0
             </div>
           </div>
           
@@ -82,9 +82,9 @@ export default function AboutW3Node() {
           {/* Main Title - Three Lines */}
           <div className="mb-8" data-aos="fade-up">
             <h2 className="text-4xl md:text-5xl lg:text-8xl xl:text-7xl font-bold mb-4 uppercase leading-tight">
-              <span className="block text-white">WELCOME TO DEVFEST 2026</span>
+              <span className="block text-white">WELCOME TO DEVFEST 5.0 2026</span>
               <span className="block text-white">WEB3 DEVELOPER</span>
-              <span className="block text-orange-500">CONFERENCE </span>
+              <span className="block text-blue-700">CONFERENCE </span>
             </h2>
           </div>
           
@@ -101,7 +101,7 @@ export default function AboutW3Node() {
               className="group relative px-6 py-4 bg-gray-800 border border-white text-white font-semibold hover:bg-gray-700 transition flex items-center justify-between"
             >
               <span className="uppercase text-sm md:text-base">BECOME A SPONSOR</span>
-              <span className="ml-4 w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="ml-4 w-6 h-6 bg-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 15l7-7 7 7" />
                 </svg>
@@ -113,7 +113,7 @@ export default function AboutW3Node() {
               className="group relative px-6 py-4 bg-gray-800 border border-white text-white font-semibold hover:bg-gray-700 transition flex items-center justify-between"
             >
               <span className="uppercase text-sm md:text-base">APPLY TO SPEAK</span>
-              <span className="ml-4 w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="ml-4 w-6 h-6 bg-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 15l7-7 7 7" />
                 </svg>
@@ -125,7 +125,7 @@ export default function AboutW3Node() {
               className="group relative px-6 py-4 bg-gray-800 border border-white text-white font-semibold hover:bg-gray-700 transition flex items-center justify-between"
             >
               <span className="uppercase text-sm md:text-base">APPLY TO HACK</span>
-              <span className="ml-4 w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="ml-4 w-6 h-6 bg-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 15l7-7 7 7" />
                 </svg>
@@ -137,7 +137,7 @@ export default function AboutW3Node() {
               className="group relative px-6 py-4 bg-gray-800 border border-white text-white font-semibold hover:bg-gray-700 transition flex items-center justify-between"
             >
               <span className="uppercase text-sm md:text-base">BECOME A COMMUNITY PARTNER</span>
-              <span className="ml-4 w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="ml-4 w-6 h-6 bg-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 15l7-7 7 7" />
                 </svg>
@@ -150,7 +150,7 @@ export default function AboutW3Node() {
         <div className="mt-20 md:mt-32" data-aos="fade-up">
           <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 md:mb-16 text-center uppercase">
             <span className="text-white">WHO THE</span>{' '}
-            <span className="text-orange-500">CONFERENCE IS FOR</span>
+            <span className="text-blue-700">CONFERENCE IS FOR</span>
           </h3>
           
           <div className="grid md:grid-cols-3 gap-8 md:gap-12 mb-20 md:mb-32">
@@ -169,7 +169,7 @@ export default function AboutW3Node() {
                           <path d="M30 0L60 30L30 60L0 30Z" fill="url(#gradient1)" />
                           <defs>
                             <linearGradient id="gradient1" x1="0" y1="0" x2="60" y2="60">
-                              <stop offset="0%" stopColor="#FF6B4A" />
+                              <stop offset="0%" stopColor="#1D4ED8" />
                               <stop offset="100%" stopColor="#60A5FA" />
                             </linearGradient>
                           </defs>

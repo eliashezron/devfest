@@ -2,7 +2,7 @@
 
 export default function SponsorshipW3Node() {
   return (
-    <section id="sponsorship" className="relative py-20 md:py-32 bg-black text-white overflow-hidden">
+    <section id="sponsorship" className="relative py-20 md:py-32 bg-blue-950 text-white overflow-hidden">
       {/* Grid pattern background */}
       <div 
         className="absolute inset-0 opacity-10"
@@ -51,7 +51,7 @@ export default function SponsorshipW3Node() {
           {/* Main Title - Two Lines */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 uppercase leading-tight">
             <span className="block text-white">ACCELERATE THE BUIDLERS,</span>
-            <span className="block text-orange-500">SHAPE THE FUTURE</span>
+            <span className="block text-blue-700">SHAPE THE FUTURE</span>
           </h2>
           
           {/* Body Text */}
@@ -73,7 +73,7 @@ export default function SponsorshipW3Node() {
             }}
           >
             <span className="uppercase text-sm md:text-base">BECOME A SPONSOR</span>
-            <span className="ml-4 w-6 h-6 bg-orange-500 rounded flex items-center justify-center flex-shrink-0">
+            <span className="ml-4 w-6 h-6 bg-blue-700 rounded flex items-center justify-center flex-shrink-0">
               <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 15l7-7 7 7" />
               </svg>

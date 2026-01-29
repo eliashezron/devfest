@@ -17,7 +17,7 @@ export default function HeroW3Node() {
     }
   });
   return (
-    <section className="relative h-[550px] flex items-center justify-center bg-black text-white overflow-hidden">
+    <section className="relative h-[550px] flex items-center justify-center bg-blue-950 text-white overflow-hidden">
       {/* Grid pattern background */}
       <div 
         className="absolute inset-0 opacity-10"
@@ -35,7 +35,7 @@ export default function HeroW3Node() {
           {/* Main Title - Upper Section */}
           <div className="flex items-center justify-center flex-1 mb-3 md:mb-16 lg:mb-10">
             <h1 
-              className="w-full text-7xl md:text-9xl lg:text-[12rem] xl:text-[14rem] 2xl:text-[16rem] font-bold tracking-tight text-center leading-none"
+              className="w-full text-6xl md:text-8xl lg:text-[10rem] xl:text-[12rem] 2xl:text-[14rem] font-bold tracking-tight text-center leading-none"
               data-aos="fade-up"
               style={{ 
                 fontFamily: '"Courier New", Courier, monospace',
@@ -54,6 +54,7 @@ export default function HeroW3Node() {
                   {letter}
                 </motion.span>
               ))}
+              <span className="inline-block align-baseline text-2xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl ml-1 md:ml-2"> 5.0</span>
             </h1>
           </div>
 
@@ -61,12 +62,12 @@ export default function HeroW3Node() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 lg:gap-20 w-full max-w-6xl mx-auto">
             {/* Location Block - Left */}
             <div className="flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="100">
-              {/* Orange map pin icon - outlined */}
+              {/* Navy map pin icon - outlined */}
               <div className="mb-6 md:mb-8">
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
-                    stroke="#FF6B4A"
+                    stroke="#1D4ED8"
                     strokeWidth="2"
                     fill="none"
                   />

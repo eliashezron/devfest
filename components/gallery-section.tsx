@@ -26,7 +26,7 @@ export default function GallerySection() {
 
   return (
     <>
-      <section className="py-16 md:py-24 bg-black text-white overflow-hidden">
+      <section className="py-16 md:py-24 bg-blue-950 text-white overflow-hidden">
         {/* Diagonal grid pattern background */}
         <div 
           className="absolute inset-0 opacity-10"

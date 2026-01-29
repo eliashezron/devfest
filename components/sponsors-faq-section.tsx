@@ -60,7 +60,7 @@ export default function SponsorsFAQSection() {
   };
 
   return (
-    <section className="relative py-20 md:py-32 bg-gray-900 text-white overflow-hidden">
+    <section className="relative py-20 md:py-32 bg-blue-950 text-white overflow-hidden">
       {/* Diagonal grid pattern background */}
       <div 
         className="absolute inset-0 opacity-10"
