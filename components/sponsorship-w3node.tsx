@@ -1,20 +1,11 @@
 'use client';
 
+import BlockchainBackground from '@/components/blockchain-background';
+
 export default function SponsorshipW3Node() {
   return (
-    <section id="sponsorship" className="relative py-20 md:py-32 bg-blue-950 text-white overflow-hidden">
-      {/* Grid pattern background */}
-      <div 
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)
-          `,
-          backgroundSize: '50px 50px'
-        }}
-      ></div>
-
+    <section id="sponsorship" className="relative py-20 md:py-32 text-white overflow-hidden">
+      <BlockchainBackground />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Header Section */}
         <div className="relative mb-12">

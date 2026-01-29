@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import BlockchainBackground from '@/components/blockchain-background';
 import Image from 'next/image';
 import daniel from '@/public/images/daniel.jpeg';
 import Bbosa from '@/public/images/lutalo.jpeg';
@@ -137,17 +138,8 @@ export default function SpeakersW3Node() {
 
   return (
     <>
-      <section id="speakers" className="relative py-20 md:py-32 bg-blue-950 text-white overflow-hidden">
-        {/* Diagonal grid pattern background */}
-        <div 
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: `
-              repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.1) 10px, rgba(255, 255, 255, 0.1) 20px)
-            `,
-          }}
-        ></div>
-
+      <section id="speakers" className="relative py-20 md:py-32 text-white overflow-hidden">
+        <BlockchainBackground />
         <div className="relative z-10 max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Main Title */}
           <div className="text-center mb-8" data-aos="fade-up">

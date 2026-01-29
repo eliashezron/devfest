@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import BlockchainBackground from '@/components/blockchain-background';
 import celo from '@/public/images/celo.png';
 import starknet from '@/public/images/starknet.png';
 import onboard from '@/public/images/onboard.png';
@@ -60,17 +61,8 @@ export default function SponsorsFAQSection() {
   };
 
   return (
-    <section className="relative py-20 md:py-32 bg-blue-950 text-white overflow-hidden">
-      {/* Diagonal grid pattern background */}
-      <div 
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage: `
-            repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.1) 10px, rgba(255, 255, 255, 0.1) 20px)
-          `,
-        }}
-      ></div>
-
+    <section className="relative py-20 md:py-32 text-white overflow-hidden">
+      <BlockchainBackground />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Section: Our Previous Sponsors */}
         <div className="mb-20 md:mb-32" data-aos="fade-up">

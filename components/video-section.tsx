@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import BlockchainBackground from '@/components/blockchain-background';
 
 export default function VideoSection() {
   const iframeRef = useRef<HTMLIFrameElement>(null);
@@ -15,8 +16,9 @@ export default function VideoSection() {
   }, []);
 
   return (
-    <section className="relative w-full bg-blue-950 py-0 flex items-center justify-center -mt-12 md:-mt-16 lg:-mt-20">
-      <div className="relative w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" style={{ paddingBottom: '56.25%' }}> {/* 16:9 aspect ratio */}
+    <section className="relative w-full py-0 flex items-center justify-center -mt-12 md:-mt-16 lg:-mt-20 overflow-hidden">
+      <BlockchainBackground />
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" style={{ paddingBottom: '56.25%' }}> {/* 16:9 aspect ratio */}
         <div className="absolute top-0 left-0 w-full h-full rounded-2xl md:rounded-3xl lg:rounded-[2rem] overflow-hidden">
           <iframe
             ref={iframeRef}

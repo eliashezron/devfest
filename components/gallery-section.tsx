@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import BlockchainBackground from '@/components/blockchain-background';
 import hack1 from '@/public/images/hack1.jpg';
 import hack2 from '@/public/images/hack2.jpg';
 import hack3 from '@/public/images/hack3.jpg';
@@ -26,17 +27,8 @@ export default function GallerySection() {
 
   return (
     <>
-      <section className="py-16 md:py-24 bg-blue-950 text-white overflow-hidden">
-        {/* Diagonal grid pattern background */}
-        <div 
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: `
-              repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.1) 10px, rgba(255, 255, 255, 0.1) 20px)
-            `,
-          }}
-        ></div>
-
+      <section className="relative py-16 md:py-24 text-white overflow-hidden">
+        <BlockchainBackground />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-12 md:mb-16" data-aos="fade-up">

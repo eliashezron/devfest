@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import BlockchainBackground from '@/components/blockchain-background';
 
 export default function HeroW3Node() {
   // Animation variants for FEST letters - wave effect
@@ -17,18 +18,8 @@ export default function HeroW3Node() {
     }
   });
   return (
-    <section className="relative h-[550px] flex items-center justify-center bg-blue-950 text-white overflow-hidden">
-      {/* Grid pattern background */}
-      <div 
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)
-          `,
-          backgroundSize: '50px 50px'
-        }}
-      ></div>
+    <section className="relative h-[550px] flex items-center justify-center text-white overflow-hidden">
+      <BlockchainBackground />
 
       <div className="relative z-10 w-full h-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mb-10">
         <div className="flex flex-col h-[500px] justify-between py-12 md:py-16 lg:py-20">
@@ -71,7 +62,7 @@ export default function HeroW3Node() {
                     strokeWidth="2"
                     fill="none"
                   />
-                  <circle cx="12" cy="9" r="2.5" fill="#FF6B4A" />
+                  <circle cx="12" cy="9" r="2.5" fill="#1D4ED8" />
                 </svg>
               </div>
               <div 

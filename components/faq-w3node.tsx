@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import BlockchainBackground from '@/components/blockchain-background';
 
 export default function FAQW3Node() {
   const faqs = [
@@ -30,22 +31,10 @@ export default function FAQW3Node() {
   };
 
   return (
-    <section id="faq" className="relative w-full bg-blue-950 text-white overflow-hidden">
-      {/* Top Section - Photographic Scene */}
-      
-
+    <section id="faq" className="relative w-full text-white overflow-hidden">
+      <BlockchainBackground />
       {/* Bottom Section - FAQ */}
-      <div className="relative py-20 md:py-32 bg-blue-950">
-        {/* Diagonal grid pattern background */}
-        <div 
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: `
-              repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.1) 10px, rgba(255, 255, 255, 0.1) 20px)
-            `,
-          }}
-        ></div>
-
+      <div className="relative py-20 md:py-32 z-10">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Main Heading */}
           <h2 

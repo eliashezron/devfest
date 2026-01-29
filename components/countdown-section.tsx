@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import BlockchainBackground from '@/components/blockchain-background';
 
 const getTimeRemaining = (targetDate: Date) => {
   const total = targetDate.getTime() - new Date().getTime();
@@ -48,16 +49,8 @@ export default function CountdownSection() {
   );
 
   return (
-    <section className="relative py-16 md:py-24 bg-blue-950 text-white overflow-hidden">
-      {/* Diagonal grid pattern background */}
-      <div 
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage: `
-            repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.1) 10px, rgba(255, 255, 255, 0.1) 20px)
-          `,
-        }}
-      ></div>
+    <section className="relative py-16 md:py-24 text-white overflow-hidden">
+      <BlockchainBackground />
 
       <div className="relative z-10 max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}

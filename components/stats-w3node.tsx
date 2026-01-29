@@ -1,5 +1,7 @@
 'use client';
 
+import BlockchainBackground from '@/components/blockchain-background';
+
 export default function StatsW3Node() {
   const stats = [
     { label: 'REGISTRATIONS', value: '500+' },
@@ -9,7 +11,8 @@ export default function StatsW3Node() {
   ];
 
   return (
-    <section id="stats" className="relative py-20 md:py-32 bg-blue-950 text-white overflow-hidden">
+    <section id="stats" className="relative py-20 md:py-32 text-white overflow-hidden">
+      <BlockchainBackground />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Header Section */}
         <div className="relative mb-16">
