@@ -11,17 +11,17 @@ export default function AboutW3Node() {
     {
       title: 'Community',
       description: 'Forge valuable connections with fellow attendees who share your interests and aspirations.',
-      image: '/images/community.jpeg',
+      image: '/images/communityy.jpeg',
     },
     {
       title: 'Talks and Workshops',
       description: 'Discover the potential of blockchain technologies through engaging talks and workshops.',
-      image: '/images/hack1.jpg',
+      image: '/images/workshops.jpeg',
     },
     {
       title: 'Hackathons',
       description: 'Take collaboration to the next level with security and administrative features built for teams.',
-      image: '/images/hack2.jpg',
+      image: '/images/hacka.jpeg',
     },
   ];
 
@@ -101,7 +101,8 @@ export default function AboutW3Node() {
             </a>
             
             <a
-              href="#speakers"
+              href="https://forms.gle/WXX6XN64nnqKSbAb7"
+              target="_blank"
               className="group relative px-6 py-4 bg-gray-800 border border-white text-white font-semibold hover:bg-gray-700 transition flex items-center justify-between"
             >
               <span className="uppercase text-sm md:text-base">APPLY TO SPEAK</span>
@@ -125,10 +126,11 @@ export default function AboutW3Node() {
             </a>
             
             <a
-              href="#community"
+              href="https://app.unlock-protocol.com/event/block-chain-developer-festival-v-4"
+              target="_blank"
               className="group relative px-6 py-4 bg-gray-800 border border-white text-white font-semibold hover:bg-gray-700 transition flex items-center justify-between"
             >
-              <span className="uppercase text-sm md:text-base">BECOME A COMMUNITY PARTNER</span>
+              <span className="uppercase text-sm md:text-base">REGISTER TO ATTEND</span>
               <span className="ml-4 w-6 h-6 bg-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 15l7-7 7 7" />
