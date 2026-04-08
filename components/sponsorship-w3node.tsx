@@ -57,7 +57,8 @@ export default function SponsorshipW3Node() {
           
           {/* CTA Button */}
           <a
-            href="#"
+           target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfeoqoQIrUFyvpJX8S20EfssmFjMbDzE50yhqRFRy1ZE7B12w/viewform?usp=send_form"
             className="inline-flex items-center px-8 py-4 bg-gray-800 border border-white text-white font-semibold hover:bg-gray-700 transition rounded-lg"
             style={{ 
               fontFamily: '"Courier New", Courier, monospace'

@@ -89,9 +89,10 @@ export default function AboutW3Node() {
           {/* CTA Buttons - Four buttons in a row */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6" data-aos="fade-up" data-aos-delay="200">
             <a
-              href="#sponsorship"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfeoqoQIrUFyvpJX8S20EfssmFjMbDzE50yhqRFRy1ZE7B12w/viewform?usp=send_form"
               className="group relative px-6 py-4 bg-gray-800 border border-white text-white font-semibold hover:bg-gray-700 transition flex items-center justify-between"
-            >
+           target="_blank"
+           >
               <span className="uppercase text-sm md:text-base">BECOME A SPONSOR</span>
               <span className="ml-4 w-6 h-6 bg-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -114,7 +115,8 @@ export default function AboutW3Node() {
             </a>
             
             <a
-              href="#node-engine"
+              href="https://luma.com/lurbu653"
+              target="_blank"
               className="group relative px-6 py-4 bg-gray-800 border border-white text-white font-semibold hover:bg-gray-700 transition flex items-center justify-between"
             >
               <span className="uppercase text-sm md:text-base">APPLY TO HACK</span>
