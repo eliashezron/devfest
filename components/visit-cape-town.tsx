@@ -12,7 +12,7 @@ export default function VisitCapeTown() {
           //Visit Cape Town
         </div>
         <div className="text-sm md:text-base text-gray-500 mb-4 font-mono" data-aos="fade-down">
-          2025
+          2026
         </div>
 
         {/* Main Content */}

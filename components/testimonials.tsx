@@ -101,7 +101,7 @@ const Testimonials: React.FC = () => {
             </h2>
             <p className="text-gray-600 max-w-md">
             Hear firsthand experiences from past attendees who were inspired,  
-            empowered, and connected at Blockchain DevFest Kampala 2025.  
+            empowered, and connected at Blockchain DevFest Kampala 2026.  
             Discover how this event shaped their journey and fueled their passion for blockchain innovation.  
             </p>
             <div className="flex space-x-4">

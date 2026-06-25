@@ -19,7 +19,7 @@ export default function NodeEngine() {
           //Node Engine
         </div>
         <div className="text-sm md:text-base text-gray-500 mb-12 font-mono" data-aos="fade-down">
-          2025
+          2026
         </div>
 
         {/* Hackathon Tracks */}

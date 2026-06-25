@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     question: 'When is the event?',
-    answer: 'The event will take place on June 27, 2026 in Kampala, Uganda. Stay tuned for more details about the schedule and venue.',
+    answer: 'The event will take place on August 29, 2026 in Kampala, Uganda. Stay tuned for more details about the schedule and venue.',
   },
   {
     question: 'What does it mean for my ticket or application?',

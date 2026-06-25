@@ -223,7 +223,7 @@ export default function Speakers() {
             <h2 className="text-3xl font-semibold text-gray-900 mb-6">Listen from the Speakers</h2>
             <p className="text-lg text-gray-600 leading-relaxed max-w-xl mx-auto">
               Embark on an inspiring journey as our esteemed lineup of speakers shares their expertise, insights, and
-              vision for the future of blockchain at Blockchain devFest Kampala 2025.
+              vision for the future of blockchain at Blockchain devFest Kampala 2026.
             </p>
           </div>
 

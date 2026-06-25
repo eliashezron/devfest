@@ -23,7 +23,7 @@ export default function SponsorshipW3Node() {
               //SPONSORSHIP
             </div>
             
-            {/* Right: 2025 vertical */}
+            {/* Right: 2026 vertical */}
             <div 
               className="text-sm md:text-base text-white font-mono"
               style={{ 
@@ -32,7 +32,7 @@ export default function SponsorshipW3Node() {
               }}
               data-aos="fade-left"
             >
-              2025
+              2026
             </div>
           </div>
         </div>

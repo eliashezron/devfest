@@ -41,7 +41,7 @@ export default function Hero() {
           Embrace the Blockchain Revolution
           <br />
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-300">
-            DevFest Kampala 2025
+            DevFest Kampala 2026
           </span>
         </h1>
 

@@ -115,7 +115,7 @@ export default function HeroW3Node() {
                   letterSpacing: '0.1em'
                 }}
               >
-                JUNE 2026
+                AUGUST 2026
               </div>
             </div>
 

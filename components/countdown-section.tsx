@@ -14,7 +14,7 @@ const getTimeRemaining = (targetDate: Date) => {
 };
 
 export default function CountdownSection() {
-  const targetDate = new Date('2026-06-27T09:00:00'); // DevFest Kampala 2026 - June 27th
+  const targetDate = new Date('2026-08-29T09:00:00'); // DevFest Kampala 2026 - August 29th
   const [mounted, setMounted] = useState(false);
   const [timeLeft, setTimeLeft] = useState({ total: 0, days: 0, hours: 0, minutes: 0, seconds: 0 });
 

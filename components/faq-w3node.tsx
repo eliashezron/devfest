@@ -12,7 +12,7 @@ export default function FAQW3Node() {
     },
     {
       question: 'When is the event?',
-      answer: 'The event will take place from January 22-24, 2026 in Cape Town, South Africa.',
+      answer: 'The event will take place on August 29, 2026 in Kampala, Uganda.',
     },
     {
       question: 'What does it mean for my ticket or application?',

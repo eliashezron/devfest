@@ -15,7 +15,7 @@ const HackathonHero = () => {
       
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <Badge className="mb-6 bg-white/20 text-white border-white/30 hover:bg-white/30 transition-colors">
-          DevFest Kampala 2025
+          DevFest Kampala 2026
         </Badge>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
@@ -32,7 +32,7 @@ const HackathonHero = () => {
         <div className="flex flex-wrap justify-center gap-6 mb-12 animate-fade-in animation-delay-1000">
           <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
             <Calendar className="h-5 w-5" />
-            <span>June 23-27, 2025</span>
+            <span>August 25-29, 2026</span>
           </div>
           <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
             <MapPin className="h-5 w-5" />

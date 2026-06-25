@@ -13,7 +13,7 @@ const getTimeRemaining = (targetDate: Date) => {
 };
 
 export default function CountDownTimer() {
-  const targetDate = new Date('2025-06-27T09:00:00'); // DevFest Kampala 2025
+  const targetDate = new Date('2026-08-29T09:00:00'); // DevFest Kampala 2026
   const [timeLeft, setTimeLeft] = useState(getTimeRemaining(targetDate));
 
   useEffect(() => {
@@ -48,7 +48,7 @@ export default function CountDownTimer() {
         {/* Header */}
         <div className="max-w-4xl mx-auto text-center pb-12 md:pb-16">
           <h1 className="text-4xl sm:text-5xl font-black text-gray-800 leading-tight mb-6">
-            Countdown to <span className="text-blue-600">DevFest Kampala 2025</span>
+            Countdown to <span className="text-blue-600">DevFest Kampala 2026</span>
           </h1>
           <p className="text-xl text-gray-600">
             Experience tech, community, innovation and more. Don’t miss it!
