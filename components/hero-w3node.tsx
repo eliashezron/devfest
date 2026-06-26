@@ -106,7 +106,7 @@ export default function HeroW3Node() {
                   letterSpacing: '0.1em'
                 }}
               >
-                27th 
+                29th 
               </div>
               <div 
                 className="text-gray-400 text-sm md:text-base uppercase tracking-wider"
