@@ -60,7 +60,7 @@ export default function CommunityW3Node() {
           {/* CTA Button */}
           <div className="flex-shrink-0">
             <a
-              href="https://app.unlock-protocol.com/event/block-chain-developer-festival-v-4"
+              href="https://app.unlock-protocol.com/event/block-chain-developer-festival-v-11"
               target="_blank"
               className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-black border border-white text-white font-semibold hover:bg-gray-900 transition rounded-lg"
               style={{ 

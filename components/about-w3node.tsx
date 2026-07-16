@@ -128,7 +128,7 @@ export default function AboutW3Node() {
             </a>
             
             <a
-              href="https://app.unlock-protocol.com/event/block-chain-developer-festival-v-4"
+              href="https://app.unlock-protocol.com/event/block-chain-developer-festival-v-11"
               target="_blank"
               className="group relative px-6 py-4 bg-gray-800 border border-white text-white font-semibold hover:bg-gray-700 transition flex items-center justify-between"
             >
